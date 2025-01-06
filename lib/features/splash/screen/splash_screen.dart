@@ -1,0 +1,45 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:teacher/core/classes/responsive_screen.dart';
+import 'package:teacher/core/routes/routes.dart';
+import 'package:teacher/shared/extentions/navigations.dart';
+import 'package:teacher/shared/resources/icons_resources.dart';
+
+class SplashScreen extends StatefulWidget {
+  const SplashScreen({super.key});
+
+  @override
+  State<SplashScreen> createState() => _SplashScreenState();
+}
+
+class _SplashScreenState extends State<SplashScreen> {
+  @override
+  void initState() {
+    super.initState();
+    //ThemeCubit.instance.initSharedData();
+    Future.delayed(const Duration(milliseconds: 3000), () {
+      context.pushReplacementNamed(Routes.onBoard);
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    ResponsiveScreen.initialize(context);
+    return Scaffold(
+      body: ConstrainedBox(
+        constraints: BoxConstraints(
+          maxWidth: ResponsiveScreen.width,
+          maxHeight: ResponsiveScreen.height,
+          minHeight: ResponsiveScreen.height,
+          minWidth: ResponsiveScreen.width,
+        ),
+        child: SvgPicture.asset(IconsResources.splash),
+      ),
+    );
+  }
+
+  // getFirst() async {
+  //   await SetUpMyApp.getLocation(context);
+  //   context.pushReplacementNamed(Routes.home);
+  // }
+}
