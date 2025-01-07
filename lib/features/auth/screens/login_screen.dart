@@ -26,6 +26,7 @@ class LoginScreen extends StatelessWidget {
       listener: (context, state) {},
       builder: (context, state) {
         return Scaffold(
+          resizeToAvoidBottomInset: false,
           body: Container(
             alignment: Alignment.center,
             height: ResponsiveScreen.height,
@@ -44,6 +45,7 @@ class LoginScreen extends StatelessWidget {
                   SizedBox(height: 40.h),
                   CustomTextField(
                     hintText: S.of(context).email,
+                    obscureText: true,
                     prefixIcon: ImageResources.profileIcon,
                   ),
                   SizedBox(height: 16.h),

@@ -28,6 +28,7 @@ class SignUpScreen extends StatelessWidget {
       listener: (context, state) {},
       builder: (context, state) {
         return Scaffold(
+          resizeToAvoidBottomInset: false,
           body: Container(
             height: ResponsiveScreen.height,
             width: ResponsiveScreen.width,
@@ -42,9 +43,15 @@ class SignUpScreen extends StatelessWidget {
                 children: [
                   CustomTitleLogin(title: S.of(context).theLogin),
                   SizedBox(height: 40.h),
-                  CustomTextField(hintText: S.of(context).enterName),
+                  CustomTextField(
+                    hintText: S.of(context).enterName,
+                    obscureText: true,
+                  ),
                   SizedBox(height: 16.h),
-                  CustomTextField(hintText: S.of(context).email),
+                  CustomTextField(
+                    hintText: S.of(context).email,
+                    obscureText: true,
+                  ),
                   SizedBox(height: 16.h),
                   PhoneNumberInput(hintText: S.of(context).enterPhoneNumber),
                   //CustomTextField(hintText: S.of(context).enterPhoneNumber),

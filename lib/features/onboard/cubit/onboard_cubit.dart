@@ -32,13 +32,13 @@ class OnboardCubit extends Cubit<OnboardState> {
   }
 
   void goToHome() {
-    if (currentIndex == onBoarding.length - 1) {
-      // PrefServices.sharedPreferences!.setBool("isOnboarding", true);
-      Navigator.pushReplacementNamed(
-          navigatorKey.currentContext!, Routes.initialPage);
-      emit(ChangeIndex(index: currentIndex));
-      return;
-    }
+    // if (currentIndex == onBoarding.length - 1) {
+    //   // PrefServices.sharedPreferences!.setBool("isOnboarding", true);
+    //   Navigator.pushReplacementNamed(
+    //       navigatorKey.currentContext!, Routes.initialPage);
+    //   emit(ChangeIndex(index: currentIndex));
+    //   return;
+    // }
     currentIndex++;
     emit(ChangeIndex(index: currentIndex));
     controller.nextPage(

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:teacher/core/classes/responsive_screen.dart';
-import 'package:teacher/core/functions/translate.dart';
 import 'package:teacher/core/routes/routes.dart';
 import 'package:teacher/features/onboard/cubit/onboard_cubit.dart';
 import 'package:teacher/features/onboard/widgets/custom_button.dart';
@@ -10,8 +9,6 @@ import 'package:teacher/generated/l10n.dart';
 import 'package:teacher/shared/classes/text_style.dart';
 import 'package:teacher/shared/extentions/navigations.dart';
 import 'package:teacher/shared/resources/color_resources.dart';
-import 'package:teacher/shared/resources/icons_resources.dart';
-import 'package:teacher/shared/resources/image_resources.dart';
 
 class OnboardScreen extends StatelessWidget {
   const OnboardScreen({super.key});
@@ -27,7 +24,7 @@ class OnboardScreen extends StatelessWidget {
               onPageChanged: (page) {
                 OnboardCubit.instance.changeIndex(page);
               },
-              // physics: NeverScrollableScrollPhysics(),
+              physics: NeverScrollableScrollPhysics(),
               itemCount: OnboardCubit.instance.onBoarding.length,
               controller: OnboardCubit.instance.controller,
               itemBuilder: (context, index) {
@@ -62,11 +59,9 @@ class OnboardScreen extends StatelessWidget {
                                 onTap: () {
                                   OnboardCubit.instance.selectRole(index);
                                   if (OnboardCubit.instance.selectType == 0) {
-                                    context.pushReplacementNamed(
-                                        Routes.login);
+                                    context.pushReplacementNamed(Routes.login);
                                   } else {
-                                    context.pushReplacementNamed(
-                                        Routes.login);
+                                    context.pushReplacementNamed(Routes.login);
                                   }
                                 },
                                 title: OnboardCubit.instance.words[index]

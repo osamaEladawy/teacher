@@ -26,14 +26,13 @@ class _SplashScreenState extends State<SplashScreen> {
     ResponsiveScreen.initialize(context);
     return Scaffold(
       body: ConstrainedBox(
-        constraints: BoxConstraints(
-          maxWidth: ResponsiveScreen.width,
-          maxHeight: ResponsiveScreen.height,
-          minHeight: ResponsiveScreen.height,
-          minWidth: ResponsiveScreen.width,
-        ),
-        child: Image.asset(ImageResources.splash)
-      ),
+          constraints: BoxConstraints(
+            maxWidth: ResponsiveScreen.width,
+            maxHeight: ResponsiveScreen.height,
+            minHeight: ResponsiveScreen.height,
+            minWidth: ResponsiveScreen.width,
+          ),
+          child: Image.asset(ImageResources.splash)),
     );
   }
 
