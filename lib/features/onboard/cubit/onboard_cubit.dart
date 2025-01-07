@@ -25,6 +25,7 @@ class OnboardCubit extends Cubit<OnboardState> {
     currentIndex = index;
     emit(ChangeIndex(index: currentIndex));
   }
+
   void selectRole(int index) {
     selectType = index;
     emit(ChangeIndex(index: selectType));
@@ -40,7 +41,10 @@ class OnboardCubit extends Cubit<OnboardState> {
     }
     currentIndex++;
     emit(ChangeIndex(index: currentIndex));
-    controller.jumpToPage(currentIndex);
+    controller.nextPage(
+      duration: Duration(milliseconds: 200),
+      curve: Curves.bounceIn,
+    );
   }
 
   List words = [
