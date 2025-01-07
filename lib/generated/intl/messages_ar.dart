@@ -22,6 +22,32 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-        "next": MessageLookupByLibrary.simpleMessage("التالي")
+        "confirmPassword":
+            MessageLookupByLibrary.simpleMessage("تأكيد كلمة المرور"),
+        "createAccount": MessageLookupByLibrary.simpleMessage("انشاء حساب"),
+        "email": MessageLookupByLibrary.simpleMessage("البريد الالكتروني"),
+        "enterDateOfBirth":
+            MessageLookupByLibrary.simpleMessage("ادخل تاريخ الميلاد"),
+        "enterName": MessageLookupByLibrary.simpleMessage("ادخل الاسم"),
+        "enterPassword":
+            MessageLookupByLibrary.simpleMessage("ادخل كلمة المرور"),
+        "enterPhoneNumber":
+            MessageLookupByLibrary.simpleMessage("ادخل رقم الهاتف"),
+        "female": MessageLookupByLibrary.simpleMessage("أنثى"),
+        "forgetPassword":
+            MessageLookupByLibrary.simpleMessage("هل نسيت كلمة المرور"),
+        "gender": MessageLookupByLibrary.simpleMessage("الجنس"),
+        "iAlreadyHaveAnAccount":
+            MessageLookupByLibrary.simpleMessage("لدي حساب بالفعل"),
+        "iDontHaveAnAccount":
+            MessageLookupByLibrary.simpleMessage("ليس لدي حساب"),
+        "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
+        "male": MessageLookupByLibrary.simpleMessage("ذكر"),
+        "next": MessageLookupByLibrary.simpleMessage("التالي"),
+        "or": MessageLookupByLibrary.simpleMessage("او"),
+        "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
+        "student": MessageLookupByLibrary.simpleMessage("طالب"),
+        "teacher": MessageLookupByLibrary.simpleMessage("مدرس"),
+        "theLogin": MessageLookupByLibrary.simpleMessage("التسجيل")
       };
 }

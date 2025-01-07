@@ -4,8 +4,6 @@ import 'package:teacher/core/constant/appStrings.dart';
 import 'package:teacher/shared/classes/text_style.dart';
 import 'package:teacher/shared/resources/color_resources.dart';
 
-
-
 ThemeData light = ThemeData(
   fontFamily: AppStrings.inter,
   primaryColor: const Color(0xFF5463FF),
@@ -22,51 +20,38 @@ ThemeData light = ThemeData(
   hoverColor: const Color(0xffD5D7DE),
   dividerColor: const Color(0xFF000000),
   inputDecorationTheme: InputDecorationTheme(
-     // contentPadding: EdgeInsets.only(right: 15.w,top: 24.h,bottom: 24.h,left: 15.w),
-      //fillColor: Color(0xffF6F7F9),
-      fillColor: Colors.transparent,
-      filled: true,
-      hintStyle: TextStyle(
-          fontSize: 13.sp,
-          fontFamily: AppStrings.fontFamily,
-          color: const Color(0xffBDBDBD),
-          fontWeight: FontWeight.w300),
-      errorStyle: TextStyle(
-          fontSize: 14.sp,
-          fontFamily: AppStrings.fontFamily,
-          color: const Color(0xffD82636),
-          fontWeight: AppFontWeight.regular),
-      enabledBorder: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(8.r),
-        borderSide: const BorderSide(
-            color: ColorResources.borderColor,
-            width: 1.5
-        ),
-      ),
-      focusedBorder: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(8.r),
-        borderSide: const BorderSide(
-            color: ColorResources.borderColor,
-            width: 1.5
-        ),
-      ),
-      errorBorder: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(6.w),
-        borderSide: const BorderSide(
-            color:  Color(0xffD82636),
-            width: 1.5
-        ),
-      ),
-      focusedErrorBorder: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(6.w),
-        borderSide: const BorderSide(
-            color: Color(0xff5463FF),
-            width: 1
-        ),
-      )
-
-
-
+    // contentPadding: EdgeInsets.only(right: 15.w,top: 24.h,bottom: 24.h,left: 15.w),
+    //fillColor: Color(0xffF6F7F9),
+    fillColor: Colors.transparent,
+    filled: true,
+    hintStyle: TextStyle(
+        fontSize: 13.sp,
+        fontFamily: AppStrings.fontFamily,
+        color: const Color(0xffBDBDBD),
+        fontWeight: FontWeight.w300),
+    errorStyle: TextStyle(
+        fontSize: 14.sp,
+        fontFamily: AppStrings.fontFamily,
+        color: const Color(0xffD82636),
+        fontWeight: AppFontWeight.regular),
+    enabledBorder: OutlineInputBorder(
+      borderRadius: BorderRadius.circular(8.r),
+      borderSide:
+          const BorderSide(color: ColorResources.whiteColor, width: 1.5),
+    ),
+    focusedBorder: OutlineInputBorder(
+      borderRadius: BorderRadius.circular(8.r),
+      borderSide:
+          const BorderSide(color: ColorResources.whiteColor, width: 1.5),
+    ),
+    errorBorder: OutlineInputBorder(
+      borderRadius: BorderRadius.circular(6.w),
+      borderSide: const BorderSide(color: Color(0xffD82636), width: 1.5),
+    ),
+    focusedErrorBorder: OutlineInputBorder(
+      borderRadius: BorderRadius.circular(6.w),
+      borderSide: const BorderSide(color: Color(0xff5463FF), width: 1),
+    ),
   ),
   // appBarTheme:  AppBarTheme(
   //   centerTitle: true,
@@ -79,11 +64,14 @@ ThemeData light = ThemeData(
   //     fontSize: 15.sp,color:  Colors.black,fontWeight: FontWeight.w600
   //   )
   // ),
-  popupMenuTheme: const PopupMenuThemeData(color: Colors.white, surfaceTintColor: Colors.white),
+  popupMenuTheme: const PopupMenuThemeData(
+      color: Colors.white, surfaceTintColor: Colors.white),
   dialogTheme: const DialogTheme(surfaceTintColor: Colors.white),
-  floatingActionButtonTheme: FloatingActionButtonThemeData(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(500))),
+  floatingActionButtonTheme: FloatingActionButtonThemeData(
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(500))),
   bottomAppBarTheme: const BottomAppBarTheme(
-    surfaceTintColor: Colors.white, height: 60,
+    surfaceTintColor: Colors.white,
+    height: 60,
     padding: EdgeInsets.symmetric(vertical: 5),
   ),
   dividerTheme: const DividerThemeData(thickness: 1, color: Color(0xFF999999)),

@@ -153,22 +153,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.0"
-  easy_localization:
+  dropdown_textfield:
     dependency: "direct main"
     description:
-      name: easy_localization
-      sha256: fa59bcdbbb911a764aa6acf96bbb6fa7a5cf8234354fc45ec1a43a0349ef0201
+      name: dropdown_textfield
+      sha256: ef8a35c52c92a563773d3efead94e5a1c162d6fe6c53974d0986aab6249928a1
       url: "https://pub.dev"
     source: hosted
-    version: "3.0.7"
-  easy_logger:
+    version: "1.2.0"
+  equatable:
     dependency: transitive
     description:
-      name: easy_logger
-      sha256: c764a6e024846f33405a2342caf91c62e357c24b02c04dbc712ef232bf30ffb7
+      name: equatable
+      sha256: "567c64b3cb4cf82397aac55f4f0cbd3ca20d77c6c03bedbc4ceaddc08904aef7"
       url: "https://pub.dev"
     source: hosted
-    version: "0.0.2"
+    version: "2.0.7"
   fake_async:
     dependency: transitive
     description:
@@ -549,6 +549,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.19.0"
+  intl_phone_field:
+    dependency: "direct main"
+    description:
+      name: intl_phone_field
+      sha256: "73819d3dfcb68d2c85663606f6842597c3ddf6688ac777f051b17814fe767bbf"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.2.0"
   js:
     dependency: transitive
     description:

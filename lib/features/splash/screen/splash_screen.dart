@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:teacher/core/classes/responsive_screen.dart';
 import 'package:teacher/core/routes/routes.dart';
 import 'package:teacher/shared/extentions/navigations.dart';
-import 'package:teacher/shared/resources/icons_resources.dart';
+import 'package:teacher/shared/resources/image_resources.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -33,7 +32,7 @@ class _SplashScreenState extends State<SplashScreen> {
           minHeight: ResponsiveScreen.height,
           minWidth: ResponsiveScreen.width,
         ),
-        child: SvgPicture.asset(IconsResources.splash),
+        child: Image.asset(ImageResources.splash)
       ),
     );
   }

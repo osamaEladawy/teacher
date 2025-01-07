@@ -1,5 +1,4 @@
 import 'package:bloc/bloc.dart';
-import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:teacher/app_injections.dart';
@@ -9,7 +8,7 @@ import 'package:teacher/shared/cubits/bloc_observer.dart';
 
 void main(List<String> args) async {
   WidgetsFlutterBinding.ensureInitialized();
-  await EasyLocalization.ensureInitialized();
+  //await EasyLocalization.ensureInitialized();
   await PrefServices.init();
   Bloc.observer = MyBlocObserver();
   await appInjections();

@@ -4,6 +4,7 @@ class Routes {
   static const homeTap = "homeTap";
   static const login = "login";
   static const signUp = "signUp";
+  static const loginOrSignUp = "loginOrSignUp";
   static const initialPage = "initialPage";
   static const surah = "surah";
   static const onBoard = "onBoard";

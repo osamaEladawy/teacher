@@ -2,6 +2,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:teacher/core/routes/routes.dart';
+import 'package:teacher/features/auth/screens/initial_page.dart';
+import 'package:teacher/features/auth/screens/login_or_signup.dart';
+import 'package:teacher/features/auth/screens/login_screen.dart';
+import 'package:teacher/features/auth/screens/sign_up_screen.dart';
+import 'package:teacher/features/home/screens/home_screen.dart';
 import 'package:teacher/features/onboard/screens/onboard_screen.dart';
 import 'package:teacher/features/splash/screen/splash_screen.dart';
 
@@ -16,16 +21,16 @@ class RoutesGenerator {
         return _buildRoute(const SplashScreen(), isIos);
       case Routes.onBoard:
         return _buildRoute(const OnboardScreen(), isIos);
-      // case Routes.forgetPassword:
-      //   return _buildRoute(const HomeScreen(), isIos);
-      // case Routes.homeTap:
-      //   return _buildRoute(const HomeTapScreen(), isIos);
-      // case Routes.manageScreens:
-      //   return _buildRoute(const ManageScreens(), isIos);
-      // case Routes.addFood:
-      //   return _buildRoute(const AddFood(), isIos);
-      // case Routes.foods:
-      //   return _buildRoute(const FoodsScreen(), isIos);
+      case Routes.home:
+        return _buildRoute(const HomeScreen(), isIos);
+      case Routes.login:
+        return _buildRoute(const LoginScreen(), isIos);
+      case Routes.signUp:
+        return _buildRoute(const SignUpScreen(), isIos);
+      case Routes.loginOrSignUp:
+        return _buildRoute(const LoginOrSignUp(), isIos);
+      case Routes.initialPage:
+        return _buildRoute(const InitialPage(), isIos);
       // case Routes.foodDetails:
       //   return _buildRoute(const FoodDetails(), isIos);
       // case Routes.orderHistoryDetails:

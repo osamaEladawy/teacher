@@ -21,6 +21,35 @@ class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'en';
 
   final messages = _notInlinedMessages(_notInlinedMessages);
-  static Map<String, Function> _notInlinedMessages(_) =>
-      <String, Function>{"next": MessageLookupByLibrary.simpleMessage("Next")};
+  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
+        "confirmPassword":
+            MessageLookupByLibrary.simpleMessage("Confirm Password"),
+        "createAccount": MessageLookupByLibrary.simpleMessage("Create Account"),
+        "email": MessageLookupByLibrary.simpleMessage("Email"),
+        "enterDateOfBirth":
+            MessageLookupByLibrary.simpleMessage("Enter date of birth"),
+        "enterName": MessageLookupByLibrary.simpleMessage("Enter Name"),
+        "enterPassword": MessageLookupByLibrary.simpleMessage("Enter Password"),
+        "enterPhoneNumber":
+            MessageLookupByLibrary.simpleMessage("Enter phone number"),
+        "female": MessageLookupByLibrary.simpleMessage("Female"),
+        "firstName": MessageLookupByLibrary.simpleMessage("First Name"),
+        "forgetPassword":
+            MessageLookupByLibrary.simpleMessage("Forget Password"),
+        "gender": MessageLookupByLibrary.simpleMessage("Gender"),
+        "iAlreadyHaveAnAccount":
+            MessageLookupByLibrary.simpleMessage("I Already Have An Account"),
+        "iDontHaveAnAccount":
+            MessageLookupByLibrary.simpleMessage("I Don\'t Have An Account"),
+        "login": MessageLookupByLibrary.simpleMessage("Login"),
+        "male": MessageLookupByLibrary.simpleMessage("Male"),
+        "next": MessageLookupByLibrary.simpleMessage("Next"),
+        "or": MessageLookupByLibrary.simpleMessage("Or"),
+        "password": MessageLookupByLibrary.simpleMessage("Password"),
+        "student": MessageLookupByLibrary.simpleMessage("Student"),
+        "submit": MessageLookupByLibrary.simpleMessage("Submit"),
+        "teacher": MessageLookupByLibrary.simpleMessage("Teacher"),
+        "theLogin": MessageLookupByLibrary.simpleMessage("The Login")
+      };
 }
