@@ -22,6 +22,12 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "achievement": MessageLookupByLibrary.simpleMessage("التحصيلي"),
+        "addNewCourse":
+            MessageLookupByLibrary.simpleMessage("اضافة دورة جديدة"),
+        "books": MessageLookupByLibrary.simpleMessage("الكورسات"),
+        "capabilities": MessageLookupByLibrary.simpleMessage("القدرات"),
+        "cart": MessageLookupByLibrary.simpleMessage("السلة"),
         "confirmPassword":
             MessageLookupByLibrary.simpleMessage("تأكيد كلمة المرور"),
         "createAccount": MessageLookupByLibrary.simpleMessage("انشاء حساب"),
@@ -33,21 +39,38 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("ادخل كلمة المرور"),
         "enterPhoneNumber":
             MessageLookupByLibrary.simpleMessage("ادخل رقم الهاتف"),
+        "enterYourCourse": MessageLookupByLibrary.simpleMessage(
+            "قم بادخال الدورة التعليميه الخاصة بك لتعرض على منصة وهح التي تحتوي على اكثر من 10000 طالب من جميع انحاء المملكه العربية السعودية"),
         "female": MessageLookupByLibrary.simpleMessage("أنثى"),
         "forgetPassword":
             MessageLookupByLibrary.simpleMessage("هل نسيت كلمة المرور"),
         "gender": MessageLookupByLibrary.simpleMessage("الجنس"),
+        "highSchool": MessageLookupByLibrary.simpleMessage("الثانوية العامة"),
+        "home": MessageLookupByLibrary.simpleMessage("االرئيسية"),
+        "hour": MessageLookupByLibrary.simpleMessage("ساعة"),
         "iAlreadyHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("لدي حساب بالفعل"),
         "iDontHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("ليس لدي حساب"),
+        "lectures": MessageLookupByLibrary.simpleMessage(" محاضرات"),
         "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "male": MessageLookupByLibrary.simpleMessage("ذكر"),
         "next": MessageLookupByLibrary.simpleMessage("التالي"),
         "or": MessageLookupByLibrary.simpleMessage("او"),
+        "organization": MessageLookupByLibrary.simpleMessage("الترتيب"),
         "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
+        "profile": MessageLookupByLibrary.simpleMessage("الملف الشخصي"),
+        "search": MessageLookupByLibrary.simpleMessage("البحث"),
+        "settings": MessageLookupByLibrary.simpleMessage("الاعدادات"),
+        "statistics": MessageLookupByLibrary.simpleMessage("الاحصائيات"),
         "student": MessageLookupByLibrary.simpleMessage("طالب"),
+        "students": MessageLookupByLibrary.simpleMessage("الطلبة"),
         "teacher": MessageLookupByLibrary.simpleMessage("مدرس"),
-        "theLogin": MessageLookupByLibrary.simpleMessage("التسجيل")
+        "theLogin": MessageLookupByLibrary.simpleMessage("التسجيل"),
+        "theStudents": MessageLookupByLibrary.simpleMessage("الطلاب"),
+        "thirdSecondary": MessageLookupByLibrary.simpleMessage("ثالث ثانوي"),
+        "universities": MessageLookupByLibrary.simpleMessage("الجامعات"),
+        "welcome": MessageLookupByLibrary.simpleMessage(
+            "مرحبا بك في منصة وهج التعليمية")
       };
 }

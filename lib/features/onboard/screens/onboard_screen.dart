@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:teacher/core/classes/responsive_screen.dart';
+import 'package:teacher/core/functions/translate.dart';
 import 'package:teacher/core/routes/routes.dart';
 import 'package:teacher/features/onboard/cubit/onboard_cubit.dart';
 import 'package:teacher/features/onboard/widgets/custom_button.dart';
-import 'package:teacher/generated/l10n.dart';
 import 'package:teacher/shared/classes/text_style.dart';
 import 'package:teacher/shared/extentions/navigations.dart';
 import 'package:teacher/shared/resources/color_resources.dart';
@@ -99,7 +99,7 @@ class OnboardScreen extends StatelessWidget {
                                   topRight: Radius.circular(50.r)),
                             ),
                             child: Text(
-                              S.of(context).next,
+                              tr.next,
                               style: AppTextStyle.textStyle(
                                 appFontSize: 16.sp,
                                 appFontHeight: 19.36.sp,

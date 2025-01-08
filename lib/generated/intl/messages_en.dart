@@ -22,7 +22,13 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "achievement": MessageLookupByLibrary.simpleMessage("Achievement"),
+        "addNewCourse":
+            MessageLookupByLibrary.simpleMessage("Add A New Course"),
+        "books": MessageLookupByLibrary.simpleMessage("Books"),
         "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
+        "capabilities": MessageLookupByLibrary.simpleMessage("Capabilities"),
+        "cart": MessageLookupByLibrary.simpleMessage("Cart"),
         "confirmPassword":
             MessageLookupByLibrary.simpleMessage("Confirm Password"),
         "createAccount": MessageLookupByLibrary.simpleMessage("Create Account"),
@@ -33,23 +39,41 @@ class MessageLookup extends MessageLookupByLibrary {
         "enterPassword": MessageLookupByLibrary.simpleMessage("Enter Password"),
         "enterPhoneNumber":
             MessageLookupByLibrary.simpleMessage("Enter phone number"),
+        "enterYourCourse": MessageLookupByLibrary.simpleMessage(
+            "Enter your course to be displayed on the Wahha platform, which contains more than 10,000 students from all over the Kingdom of Saudi Arabia"),
         "female": MessageLookupByLibrary.simpleMessage("Female"),
         "firstName": MessageLookupByLibrary.simpleMessage("First Name"),
         "forgetPassword":
             MessageLookupByLibrary.simpleMessage("Forget Password"),
         "gender": MessageLookupByLibrary.simpleMessage("Gender"),
+        "highSchool": MessageLookupByLibrary.simpleMessage("High School"),
+        "home": MessageLookupByLibrary.simpleMessage("Home"),
+        "hour": MessageLookupByLibrary.simpleMessage("Hour"),
         "iAlreadyHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("I Already Have An Account"),
         "iDontHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("I Don\'t Have An Account"),
+        "lectures": MessageLookupByLibrary.simpleMessage("Lectures"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "male": MessageLookupByLibrary.simpleMessage("Male"),
         "next": MessageLookupByLibrary.simpleMessage("Next"),
         "or": MessageLookupByLibrary.simpleMessage("Or"),
+        "organization": MessageLookupByLibrary.simpleMessage("Organization"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
+        "profile": MessageLookupByLibrary.simpleMessage("Profile"),
+        "search": MessageLookupByLibrary.simpleMessage("Search"),
+        "settings": MessageLookupByLibrary.simpleMessage("Settings"),
+        "statistics": MessageLookupByLibrary.simpleMessage("Statistics"),
         "student": MessageLookupByLibrary.simpleMessage("Student"),
+        "students": MessageLookupByLibrary.simpleMessage("Students"),
         "submit": MessageLookupByLibrary.simpleMessage("Submit"),
         "teacher": MessageLookupByLibrary.simpleMessage("Teacher"),
-        "theLogin": MessageLookupByLibrary.simpleMessage("The Login")
+        "theLogin": MessageLookupByLibrary.simpleMessage("The Login"),
+        "theStudents": MessageLookupByLibrary.simpleMessage("The Students"),
+        "thirdSecondary":
+            MessageLookupByLibrary.simpleMessage("Third Secondary"),
+        "universities": MessageLookupByLibrary.simpleMessage("Universities"),
+        "welcome": MessageLookupByLibrary.simpleMessage(
+            "Welcome to the Wahj educational platform")
       };
 }

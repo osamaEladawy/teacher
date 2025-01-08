@@ -279,6 +279,206 @@ class S {
       args: [],
     );
   }
+
+  /// `Enter your course to be displayed on the Wahha platform, which contains more than 10,000 students from all over the Kingdom of Saudi Arabia`
+  String get enterYourCourse {
+    return Intl.message(
+      'Enter your course to be displayed on the Wahha platform, which contains more than 10,000 students from all over the Kingdom of Saudi Arabia',
+      name: 'enterYourCourse',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Welcome to the Wahj educational platform`
+  String get welcome {
+    return Intl.message(
+      'Welcome to the Wahj educational platform',
+      name: 'welcome',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `High School`
+  String get highSchool {
+    return Intl.message(
+      'High School',
+      name: 'highSchool',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Universities`
+  String get universities {
+    return Intl.message(
+      'Universities',
+      name: 'universities',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Capabilities`
+  String get capabilities {
+    return Intl.message(
+      'Capabilities',
+      name: 'capabilities',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Lectures`
+  String get lectures {
+    return Intl.message(
+      'Lectures',
+      name: 'lectures',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Achievement`
+  String get achievement {
+    return Intl.message(
+      'Achievement',
+      name: 'achievement',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add A New Course`
+  String get addNewCourse {
+    return Intl.message(
+      'Add A New Course',
+      name: 'addNewCourse',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Hour`
+  String get hour {
+    return Intl.message(
+      'Hour',
+      name: 'hour',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Home`
+  String get home {
+    return Intl.message(
+      'Home',
+      name: 'home',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Books`
+  String get books {
+    return Intl.message(
+      'Books',
+      name: 'books',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cart`
+  String get cart {
+    return Intl.message(
+      'Cart',
+      name: 'cart',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Profile`
+  String get profile {
+    return Intl.message(
+      'Profile',
+      name: 'profile',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Settings`
+  String get settings {
+    return Intl.message(
+      'Settings',
+      name: 'settings',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Statistics`
+  String get statistics {
+    return Intl.message(
+      'Statistics',
+      name: 'statistics',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Students`
+  String get students {
+    return Intl.message(
+      'Students',
+      name: 'students',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The Students`
+  String get theStudents {
+    return Intl.message(
+      'The Students',
+      name: 'theStudents',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Organization`
+  String get organization {
+    return Intl.message(
+      'Organization',
+      name: 'organization',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Search`
+  String get search {
+    return Intl.message(
+      'Search',
+      name: 'search',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Third Secondary`
+  String get thirdSecondary {
+    return Intl.message(
+      'Third Secondary',
+      name: 'thirdSecondary',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

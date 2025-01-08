@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:teacher/core/classes/responsive_screen.dart';
+import 'package:teacher/core/functions/translate.dart';
 import 'package:teacher/core/routes/routes.dart';
 import 'package:teacher/features/auth/cubit/auth_cubit.dart';
 import 'package:teacher/features/auth/widgets/custom_icons.dart';
 import 'package:teacher/features/auth/widgets/custom_text_field.dart';
 import 'package:teacher/features/auth/widgets/custom_title_login.dart';
 import 'package:teacher/features/onboard/widgets/custom_button.dart';
-import 'package:teacher/generated/l10n.dart';
 import 'package:teacher/shared/classes/text_style.dart';
 import 'package:teacher/shared/extentions/navigations.dart';
 import 'package:teacher/shared/resources/color_resources.dart';
@@ -41,10 +41,10 @@ class LoginScreen extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  CustomTitleLogin(title: S.of(context).login),
+                  CustomTitleLogin(title: tr.login),
                   SizedBox(height: 40.h),
                   CustomTextField(
-                    hintText: S.of(context).email,
+                    hintText: tr.email,
                     obscureText: true,
                     prefixIcon: ImageResources.profileIcon,
                   ),
@@ -57,14 +57,14 @@ class LoginScreen extends StatelessWidget {
                     suffixIconOnTap: () {
                       AuthCubit.instance.showPasswordLogin();
                     },
-                    hintText: S.of(context).password,
+                    hintText:tr.password,
                     prefixIcon: ImageResources.locked,
                   ),
                   SizedBox(height: 8.h),
                   Align(
                     alignment: Alignment.topLeft,
                     child: Text(
-                      "${S.of(context).forgetPassword} ؟",
+                      "${tr.forgetPassword} ؟",
                       style: AppTextStyle.textStyle(
                         appFontSize: 16.sp,
                         appFontHeight: 19.36.sp,
@@ -78,16 +78,16 @@ class LoginScreen extends StatelessWidget {
                   SizedBox(height: 88.h),
                   CustomButton(
                     isLogin: true,
-                    title: S.of(context).login,
+                    title: tr.login,
                     onTap: () {
-                      context.pushReplacementNamed(Routes.home);
+                      context.pushReplacementNamed(Routes.dashBoard);
                     },
                   ),
                   SizedBox(height: 24.h),
                   Align(
                     alignment: Alignment.center,
                     child: Text(
-                      S.of(context).or,
+                      tr.or,
                       style: AppTextStyle.textStyle(
                         appFontSize: 14.sp,
                         appFontHeight: 16.8.sp,
@@ -115,7 +115,7 @@ class LoginScreen extends StatelessWidget {
                       TextSpan(
                         children: [
                           TextSpan(
-                            text: " ${S.of(context).iDontHaveAnAccount}؟  ",
+                            text: " ${tr.iDontHaveAnAccount}؟  ",
                             style: AppTextStyle.textStyle(
                               appFontSize: 16.sp,
                               appFontHeight: 19.36.sp,
@@ -124,7 +124,7 @@ class LoginScreen extends StatelessWidget {
                             ),
                           ),
                           TextSpan(
-                            text: S.of(context).createAccount,
+                            text: tr.createAccount,
                             style: AppTextStyle.textStyle(
                                 appFontSize: 16.sp,
                                 appFontHeight: 19.36.sp,

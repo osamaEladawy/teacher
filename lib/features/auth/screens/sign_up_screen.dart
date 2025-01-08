@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:teacher/core/classes/responsive_screen.dart';
+import 'package:teacher/core/functions/translate.dart';
 import 'package:teacher/core/routes/routes.dart';
 import 'package:teacher/features/auth/cubit/auth_cubit.dart';
 import 'package:teacher/features/auth/widgets/custom_icons.dart';
 import 'package:teacher/features/auth/widgets/custom_text_field.dart';
 import 'package:teacher/features/auth/widgets/custom_title_login.dart';
 import 'package:teacher/features/onboard/widgets/custom_button.dart';
-import 'package:teacher/generated/l10n.dart';
 import 'package:teacher/shared/classes/text_style.dart';
 import 'package:teacher/shared/extentions/navigations.dart';
 import 'package:teacher/shared/resources/color_resources.dart';
@@ -41,34 +41,34 @@ class SignUpScreen extends StatelessWidget {
             child: SingleChildScrollView(
               child: Column(
                 children: [
-                  CustomTitleLogin(title: S.of(context).theLogin),
+                  CustomTitleLogin(title:tr.theLogin),
                   SizedBox(height: 40.h),
                   CustomTextField(
-                    hintText: S.of(context).enterName,
+                    hintText: tr.enterName,
                     obscureText: true,
                   ),
                   SizedBox(height: 16.h),
                   CustomTextField(
-                    hintText: S.of(context).email,
+                    hintText:tr.email,
                     obscureText: true,
                   ),
                   SizedBox(height: 16.h),
-                  PhoneNumberInput(hintText: S.of(context).enterPhoneNumber),
+                  PhoneNumberInput(hintText: tr.enterPhoneNumber),
                   //CustomTextField(hintText: S.of(context).enterPhoneNumber),
                   SizedBox(height: 16.h),
                   CustomDropDownTextField(
-                    hintText: S.of(context).enterDateOfBirth,
-                    items: [S.of(context).male, S.of(context).female],
+                    hintText: tr.enterDateOfBirth,
+                    items: [tr.male,tr.female],
                   ),
                   SizedBox(height: 16.h),
                   CustomDropDownTextField(
-                    hintText: S.of(context).gender,
-                    items: [S.of(context).male, S.of(context).female],
+                    hintText: tr.gender,
+                    items: [tr.male, tr.female],
                   ),
                   SizedBox(height: 16.h),
                   CustomTextField(
                     obscureText: AuthCubit.instance.isShowPassword,
-                    hintText: S.of(context).enterPassword,
+                    hintText: tr.enterPassword,
                     suffixIcon: AuthCubit.instance.isShowPassword
                         ? Icons.visibility
                         : Icons.visibility_off,
@@ -79,7 +79,7 @@ class SignUpScreen extends StatelessWidget {
                   SizedBox(height: 16.h),
                   CustomTextField(
                     obscureText: AuthCubit.instance.isShowConfirmPassword,
-                    hintText: S.of(context).confirmPassword,
+                    hintText:tr.confirmPassword,
                     suffixIcon: AuthCubit.instance.isShowConfirmPassword
                         ? Icons.visibility
                         : Icons.visibility_off,
@@ -89,14 +89,14 @@ class SignUpScreen extends StatelessWidget {
                   ),
                   SizedBox(height: 40.h),
                   CustomButton(
-                    title: S.of(context).login,
+                    title:tr.login,
                     isLogin: true,
                   ),
                   SizedBox(height: 24.h),
                   Align(
                     alignment: Alignment.center,
                     child: Text(
-                      S.of(context).or,
+                      tr.or,
                       style: AppTextStyle.textStyle(
                         appFontSize: 14.sp,
                         appFontHeight: 16.8.sp,
@@ -124,7 +124,7 @@ class SignUpScreen extends StatelessWidget {
                       TextSpan(
                         children: [
                           TextSpan(
-                            text: " ${S.of(context).iAlreadyHaveAnAccount}؟  ",
+                            text: " ${tr.iAlreadyHaveAnAccount}؟  ",
                             style: AppTextStyle.textStyle(
                               appFontSize: 16.sp,
                               appFontHeight: 19.36.sp,
@@ -133,7 +133,7 @@ class SignUpScreen extends StatelessWidget {
                             ),
                           ),
                           TextSpan(
-                            text: S.of(context).login,
+                            text: tr.login,
                             style: AppTextStyle.textStyle(
                                 appFontSize: 16.sp,
                                 appFontHeight: 19.36.sp,

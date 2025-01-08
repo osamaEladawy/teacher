@@ -6,9 +6,13 @@ import 'package:teacher/features/auth/screens/initial_page.dart';
 import 'package:teacher/features/auth/screens/login_or_signup.dart';
 import 'package:teacher/features/auth/screens/login_screen.dart';
 import 'package:teacher/features/auth/screens/sign_up_screen.dart';
+import 'package:teacher/features/books/screens/books_screen.dart';
+import 'package:teacher/features/dashboaed/screens/dashboard_screen.dart';
 import 'package:teacher/features/home/screens/home_screen.dart';
 import 'package:teacher/features/onboard/screens/onboard_screen.dart';
 import 'package:teacher/features/splash/screen/splash_screen.dart';
+import 'package:teacher/features/students/screens/details_students_screen.dart';
+import 'package:teacher/features/students/screens/students_screen.dart';
 
 class RoutesGenerator {
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
@@ -31,14 +35,14 @@ class RoutesGenerator {
         return _buildRoute(const LoginOrSignUp(), isIos);
       case Routes.initialPage:
         return _buildRoute(const InitialPage(), isIos);
-      // case Routes.foodDetails:
-      //   return _buildRoute(const FoodDetails(), isIos);
-      // case Routes.orderHistoryDetails:
-      //   return _buildRoute(const OrderHistoryDetailsScreen(), isIos);
-      // case Routes.walletScreen:
-      //   return _buildRoute(const WalletScreen(), isIos);
-      // case Routes.quickScreen:
-      //   return _buildRoute(const QuickScreen(), isIos);
+      case Routes.dashBoard:
+        return _buildRoute(const DashboardScreen(), isIos);
+      case Routes.books:
+        return _buildRoute(const BooksScreen(), isIos);
+      case Routes.students:
+        return _buildRoute(const StudentsScreen(), isIos);
+      case Routes.detailsForStudent:
+        return _buildRoute(const DetailsStudentsScreen(), isIos);
       // case Routes.profile:
       //   return _buildRoute(const ProfileScreen(), isIos);
       // case Routes.quickWithdrawScreen:

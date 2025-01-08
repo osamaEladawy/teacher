@@ -2,7 +2,6 @@ import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:meta/meta.dart';
-import 'package:teacher/core/routes/routes.dart';
 import 'package:teacher/features/onboard/models/onboard_model.dart';
 import 'package:teacher/generated/l10n.dart';
 import 'package:teacher/my_app.dart';

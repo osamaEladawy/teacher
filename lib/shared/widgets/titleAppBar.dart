@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:teacher/shared/resources/color_resources.dart';
 
 import '../classes/text_style.dart';
 
@@ -12,12 +13,11 @@ class TitleAppBar extends StatelessWidget {
     return Text(
       title,
       style: AppTextStyle.textStyle(
-        appFontSize: 14.sp,
-        color: Color(0xff1E1E1E),
+        appFontSize: 20.sp,
+        color: ColorResources.primaryColor,
         appFontWeight: FontWeight.w600,
-        appFontHeight: 16.94.sp,
+        appFontHeight: 24.2.sp,
       ),
     );
-
   }
 }

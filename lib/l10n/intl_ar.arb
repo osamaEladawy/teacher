@@ -18,6 +18,27 @@
     "gender":"الجنس",
     "male":"ذكر",
     "female":"أنثى",
-    "enterPhoneNumber":"ادخل رقم الهاتف"
+    "enterPhoneNumber":"ادخل رقم الهاتف",
+    "enterYourCourse":"قم بادخال الدورة التعليميه الخاصة بك لتعرض على منصة وهح التي تحتوي على اكثر من 10000 طالب من جميع انحاء المملكه العربية السعودية",
+    "welcome":"مرحبا بك في منصة وهج التعليمية",
+    "highSchool":"الثانوية العامة",
+    "universities":"الجامعات",
+    "capabilities":"القدرات",
+    "lectures":" محاضرات",
+    "achievement":"التحصيلي",
+    "addNewCourse":"اضافة دورة جديدة",
+    "hour":"ساعة",
+    "home": "االرئيسية",
+    "books":"الكورسات",
+    "cart": "السلة",
+    "profile": "الملف الشخصي",
+    "settings": "الاعدادات",
+    "statistics": "الاحصائيات",
+    "students":"الطلبة",
+    "theStudents":"الطلاب",
+    "organization":"الترتيب",
+    "search":"البحث",
+    "thirdSecondary":"ثالث ثانوي"
+
 
 }
