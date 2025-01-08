@@ -41,7 +41,8 @@ class StudentsScreen extends StatelessWidget {
                 itemBuilder: (context, index) {
                   return GestureDetector(
                     onTap: () {
-                      context.pushNamed(Routes.detailsForStudent);
+                      context.pushNamed(Routes.detailsForStudent,
+                          arguments: StudentsCubit.instance.students[index]);
                     },
                     child: Container(
                       height: 97.h,
@@ -76,7 +77,7 @@ class StudentsScreen extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                height: 28.h,
+                                //height: 28.h,
                                 width: 84.w,
                                 alignment: Alignment.center,
                                 padding: EdgeInsets.symmetric(

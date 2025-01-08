@@ -11,6 +11,7 @@ import 'package:teacher/features/dashboaed/screens/dashboard_screen.dart';
 import 'package:teacher/features/home/screens/home_screen.dart';
 import 'package:teacher/features/onboard/screens/onboard_screen.dart';
 import 'package:teacher/features/splash/screen/splash_screen.dart';
+import 'package:teacher/features/students/models/student_model.dart';
 import 'package:teacher/features/students/screens/details_students_screen.dart';
 import 'package:teacher/features/students/screens/students_screen.dart';
 
@@ -18,7 +19,7 @@ class RoutesGenerator {
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
     final isIos = defaultTargetPlatform == TargetPlatform.iOS;
     final nameRoute = settings.name;
-    //final arg = settings.arguments;
+    final arg = settings.arguments;
 
     switch (nameRoute) {
       case Routes.splash:
@@ -42,7 +43,11 @@ class RoutesGenerator {
       case Routes.students:
         return _buildRoute(const StudentsScreen(), isIos);
       case Routes.detailsForStudent:
-        return _buildRoute(const DetailsStudentsScreen(), isIos);
+        if (arg is StudentModel) {
+          return _buildRoute(DetailsStudentsScreen(student: arg), isIos);
+        } else {
+          return _buildRoute(const UndefinedWidget(), isIos);
+        }
       // case Routes.profile:
       //   return _buildRoute(const ProfileScreen(), isIos);
       // case Routes.quickWithdrawScreen:

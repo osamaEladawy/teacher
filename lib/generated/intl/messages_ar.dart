@@ -25,12 +25,19 @@ class MessageLookup extends MessageLookupByLibrary {
         "achievement": MessageLookupByLibrary.simpleMessage("التحصيلي"),
         "addNewCourse":
             MessageLookupByLibrary.simpleMessage("اضافة دورة جديدة"),
+        "answers": MessageLookupByLibrary.simpleMessage("الاجابات"),
         "books": MessageLookupByLibrary.simpleMessage("الكورسات"),
         "capabilities": MessageLookupByLibrary.simpleMessage("القدرات"),
         "cart": MessageLookupByLibrary.simpleMessage("السلة"),
         "confirmPassword":
             MessageLookupByLibrary.simpleMessage("تأكيد كلمة المرور"),
+        "course": MessageLookupByLibrary.simpleMessage(" كورس"),
+        "courses": MessageLookupByLibrary.simpleMessage("الكورسات"),
         "createAccount": MessageLookupByLibrary.simpleMessage("انشاء حساب"),
+        "degrees": MessageLookupByLibrary.simpleMessage("الدرجات"),
+        "devicesUsed":
+            MessageLookupByLibrary.simpleMessage("الاجهزه المستخدمة"),
+        "duration": MessageLookupByLibrary.simpleMessage("المدة"),
         "email": MessageLookupByLibrary.simpleMessage("البريد الالكتروني"),
         "enterDateOfBirth":
             MessageLookupByLibrary.simpleMessage("ادخل تاريخ الميلاد"),
@@ -53,12 +60,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "iDontHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("ليس لدي حساب"),
         "lectures": MessageLookupByLibrary.simpleMessage(" محاضرات"),
+        "lesson": MessageLookupByLibrary.simpleMessage("درس"),
         "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "male": MessageLookupByLibrary.simpleMessage("ذكر"),
         "next": MessageLookupByLibrary.simpleMessage("التالي"),
         "or": MessageLookupByLibrary.simpleMessage("او"),
         "organization": MessageLookupByLibrary.simpleMessage("الترتيب"),
         "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
+        "phone": MessageLookupByLibrary.simpleMessage("الهاتف المحمول"),
         "profile": MessageLookupByLibrary.simpleMessage("الملف الشخصي"),
         "search": MessageLookupByLibrary.simpleMessage("البحث"),
         "settings": MessageLookupByLibrary.simpleMessage("الاعدادات"),
@@ -66,6 +75,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "student": MessageLookupByLibrary.simpleMessage("طالب"),
         "students": MessageLookupByLibrary.simpleMessage("الطلبة"),
         "teacher": MessageLookupByLibrary.simpleMessage("مدرس"),
+        "test": MessageLookupByLibrary.simpleMessage("الاختبار"),
+        "theLine": MessageLookupByLibrary.simpleMessage("الصف"),
         "theLogin": MessageLookupByLibrary.simpleMessage("التسجيل"),
         "theStudents": MessageLookupByLibrary.simpleMessage("الطلاب"),
         "thirdSecondary": MessageLookupByLibrary.simpleMessage("ثالث ثانوي"),

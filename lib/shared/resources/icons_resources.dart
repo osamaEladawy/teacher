@@ -9,6 +9,7 @@ class IconsResources {
   static const profileIcon = "$_Icons_Path/profile_icon.svg";
   static const locked = "$_Icons_Path/locked.svg";
   static const arrowDown = "$_Icons_Path/arrow_down.svg";
+  static const arrowDown2 = "$_Icons_Path/arrow_down2.svg";
   static const bell = "$_Icons_Path/bell.svg";
   static const cart = "$_Icons_Path/cart.svg";
   static const appBarLogo = "$_Icons_Path/appBar_logo.svg";
@@ -23,4 +24,11 @@ class IconsResources {
   static const hatTeacher = "$_Icons_Path/hat_teacher.svg";
   static const settings = "$_Icons_Path/settings.svg";
   static const arrowLeft = "$_Icons_Path/arrow_left.svg";
+  static const arrowRight = "$_Icons_Path/arrow_right.svg";
+  static const degree = "$_Icons_Path/degree.svg";
+  static const note = "$_Icons_Path/note.svg";
+  static const clock = "$_Icons_Path/clock.svg";
+  static const test = "$_Icons_Path/test.svg";
+  static const correct = "$_Icons_Path/correct.svg";
+  static const wrong = "$_Icons_Path/wrong.svg";
 }

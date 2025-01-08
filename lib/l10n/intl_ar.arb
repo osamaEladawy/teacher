@@ -38,7 +38,18 @@
     "theStudents":"الطلاب",
     "organization":"الترتيب",
     "search":"البحث",
-    "thirdSecondary":"ثالث ثانوي"
+    "thirdSecondary":"ثالث ثانوي",
+    "degrees":"الدرجات",
+    "theLine":"الصف",
+    "devicesUsed":"الاجهزه المستخدمة",
+    "courses":"الكورسات",
+    "phone":"الهاتف المحمول",
+    "course":" كورس",
+    "duration":"المدة",
+    "lesson":"درس",
+    "test":"الاختبار",
+    "answers":"الاجابات"
+
 
 
 }

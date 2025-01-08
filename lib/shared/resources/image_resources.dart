@@ -9,4 +9,5 @@ class ImageResources {
   static const profile = "$_Image_Path/profile.png";
   static const appBarLogo = "$_Image_Path/appBar_logo.png";
   static const menu = "$_Image_Path/menu.png";
+  static const arrowRight = "$_Image_Path/arrow_right.png";
 }

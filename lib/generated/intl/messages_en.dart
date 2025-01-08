@@ -25,13 +25,19 @@ class MessageLookup extends MessageLookupByLibrary {
         "achievement": MessageLookupByLibrary.simpleMessage("Achievement"),
         "addNewCourse":
             MessageLookupByLibrary.simpleMessage("Add A New Course"),
+        "answers": MessageLookupByLibrary.simpleMessage("Answers"),
         "books": MessageLookupByLibrary.simpleMessage("Books"),
         "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
         "capabilities": MessageLookupByLibrary.simpleMessage("Capabilities"),
         "cart": MessageLookupByLibrary.simpleMessage("Cart"),
         "confirmPassword":
             MessageLookupByLibrary.simpleMessage("Confirm Password"),
+        "course": MessageLookupByLibrary.simpleMessage("Course"),
+        "courses": MessageLookupByLibrary.simpleMessage("Courses"),
         "createAccount": MessageLookupByLibrary.simpleMessage("Create Account"),
+        "degrees": MessageLookupByLibrary.simpleMessage("Degrees"),
+        "devicesUsed": MessageLookupByLibrary.simpleMessage("Devices Used"),
+        "duration": MessageLookupByLibrary.simpleMessage("Durations"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
         "enterDateOfBirth":
             MessageLookupByLibrary.simpleMessage("Enter date of birth"),
@@ -54,12 +60,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "iDontHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("I Don\'t Have An Account"),
         "lectures": MessageLookupByLibrary.simpleMessage("Lectures"),
+        "lesson": MessageLookupByLibrary.simpleMessage("Lesson"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "male": MessageLookupByLibrary.simpleMessage("Male"),
         "next": MessageLookupByLibrary.simpleMessage("Next"),
         "or": MessageLookupByLibrary.simpleMessage("Or"),
         "organization": MessageLookupByLibrary.simpleMessage("Organization"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
+        "phone": MessageLookupByLibrary.simpleMessage("Phone"),
         "profile": MessageLookupByLibrary.simpleMessage("Profile"),
         "search": MessageLookupByLibrary.simpleMessage("Search"),
         "settings": MessageLookupByLibrary.simpleMessage("Settings"),
@@ -68,6 +76,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "students": MessageLookupByLibrary.simpleMessage("Students"),
         "submit": MessageLookupByLibrary.simpleMessage("Submit"),
         "teacher": MessageLookupByLibrary.simpleMessage("Teacher"),
+        "test": MessageLookupByLibrary.simpleMessage("Test"),
+        "theLine": MessageLookupByLibrary.simpleMessage("the line"),
         "theLogin": MessageLookupByLibrary.simpleMessage("The Login"),
         "theStudents": MessageLookupByLibrary.simpleMessage("The Students"),
         "thirdSecondary":

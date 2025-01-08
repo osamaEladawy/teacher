@@ -41,5 +41,15 @@
     "theStudents":"The Students",
     "organization":"Organization",
     "search":"Search",
-    "thirdSecondary":"Third Secondary"
+    "thirdSecondary":"Third Secondary",
+    "degrees":"Degrees",
+    "theLine":"the line",
+    "devicesUsed":"Devices Used",
+    "courses":"Courses",
+    "phone":"Phone",
+    "course":"Course",
+    "duration":"Durations",
+    "lesson":"Lesson",
+    "test":"Test",
+    "answers":"Answers"
 }

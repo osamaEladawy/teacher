@@ -40,7 +40,8 @@ class MyApp extends StatelessWidget {
             BlocProvider<DashboardCubit>(
                 create: (context) => getIt<DashboardCubit>()),
             BlocProvider<BooksCubit>(create: (context) => getIt<BooksCubit>()),
-            BlocProvider<StudentsCubit>(create: (context) => getIt<StudentsCubit>()),
+            BlocProvider<StudentsCubit>(
+                create: (context) => getIt<StudentsCubit>()),
           ],
           child: MaterialApp(
             navigatorKey: navigatorKey,
@@ -58,7 +59,7 @@ class MyApp extends StatelessWidget {
           ),
         );
       },
-      child: SplashScreen(),
+      child: DashboardScreen(),
     );
   }
 }

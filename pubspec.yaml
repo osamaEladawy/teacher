@@ -53,6 +53,7 @@ dependencies:
   flutter_svg: ^2.0.16
   dropdown_textfield:
   intl_phone_field: ^3.0.1
+  percent_indicator: ^4.0.1
   flutter_localizations:
     sdk: flutter
 
