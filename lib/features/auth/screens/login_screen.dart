@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:teacher/core/classes/responsive_screen.dart';
+import 'package:teacher/core/functions/check_for_current_language.dart';
 import 'package:teacher/core/functions/translate.dart';
 import 'package:teacher/core/routes/routes.dart';
 import 'package:teacher/features/auth/cubit/auth_cubit.dart';
@@ -21,7 +22,7 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    ResponsiveScreen.initialize(context);
+    ResponsiveScreen.initialize();
     return BlocConsumer<AuthCubit, AuthState>(
       listener: (context, state) {},
       builder: (context, state) {
@@ -57,14 +58,16 @@ class LoginScreen extends StatelessWidget {
                     suffixIconOnTap: () {
                       AuthCubit.instance.showPasswordLogin();
                     },
-                    hintText:tr.password,
+                    hintText: tr.password,
                     prefixIcon: ImageResources.locked,
                   ),
                   SizedBox(height: 8.h),
                   Align(
                     alignment: Alignment.topLeft,
                     child: Text(
-                      "${tr.forgetPassword} ؟",
+                      isArabic
+                          ? "${tr.forgetPassword} ؟"
+                          : "${tr.forgetPassword} ?",
                       style: AppTextStyle.textStyle(
                         appFontSize: 16.sp,
                         appFontHeight: 19.36.sp,
@@ -115,7 +118,9 @@ class LoginScreen extends StatelessWidget {
                       TextSpan(
                         children: [
                           TextSpan(
-                            text: " ${tr.iDontHaveAnAccount}؟  ",
+                            text: isArabic
+                                ? "${tr.iDontHaveAnAccount}؟  "
+                                : "${tr.iDontHaveAnAccount}? ",
                             style: AppTextStyle.textStyle(
                               appFontSize: 16.sp,
                               appFontHeight: 19.36.sp,

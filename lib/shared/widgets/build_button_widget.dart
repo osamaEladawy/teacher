@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:teacher/shared/classes/text_style.dart';
+import 'package:teacher/shared/resources/color_resources.dart';
 
 class BuildButtonWidget extends StatelessWidget {
   const BuildButtonWidget({
@@ -23,7 +24,7 @@ class BuildButtonWidget extends StatelessWidget {
         height: 40.h,
         //padding: EdgeInsets.symmetric(horizontal: 16.w),
         decoration: BoxDecoration(
-          color: Color(0xff2B3D16),
+          color: ColorResources.primaryColor,
           borderRadius: BorderRadius.circular(8.r),
         ),
         child: Text(

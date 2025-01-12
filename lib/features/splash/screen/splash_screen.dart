@@ -23,16 +23,17 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    ResponsiveScreen.initialize(context);
+    ResponsiveScreen.initialize();
     return Scaffold(
       body: ConstrainedBox(
-          constraints: BoxConstraints(
-            maxWidth: ResponsiveScreen.width,
-            maxHeight: ResponsiveScreen.height,
-            minHeight: ResponsiveScreen.height,
-            minWidth: ResponsiveScreen.width,
-          ),
-          child: Image.asset(ImageResources.splash)),
+        constraints: BoxConstraints(
+          maxWidth: ResponsiveScreen.width,
+          maxHeight: ResponsiveScreen.height,
+          minHeight: ResponsiveScreen.height,
+          minWidth: ResponsiveScreen.width,
+        ),
+        child: Image.asset(ImageResources.splash),
+      ),
     );
   }
 

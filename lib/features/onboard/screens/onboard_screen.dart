@@ -15,7 +15,7 @@ class OnboardScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    ResponsiveScreen.initialize(context);
+    ResponsiveScreen.initialize();
     return BlocConsumer<OnboardCubit, OnboardState>(
       listener: (context, state) {},
       builder: (context, state) {
@@ -86,7 +86,7 @@ class OnboardScreen extends StatelessWidget {
                         )
                       : GestureDetector(
                           onTap: () {
-                            OnboardCubit.instance.goToHome();
+                            OnboardCubit.instance.nextPage();
                           },
                           child: Container(
                             height: 83.h,

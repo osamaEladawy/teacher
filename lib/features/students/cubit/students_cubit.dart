@@ -20,8 +20,7 @@ class StudentsCubit extends Cubit<StudentsState> {
   bool isClickOnArrowDown = false;
 
   int currentIndex = 0;
-
-  
+  int displayAnswer = 0;
 
   void selectCard(int index) {
     currentIndex = index;
@@ -29,324 +28,330 @@ class StudentsCubit extends Cubit<StudentsState> {
     emit(ChangeColor());
   }
 
-  void displayAnswers() {
+  void changeIndex(int index) {
+    currentIndex = index;
+    emit(ChangeIndex(index: currentIndex));
+  }
+
+  void displayAnswers(int index) {
+    displayAnswer = index;
     isClickOnArrowDown = !isClickOnArrowDown;
-    emit(DisplayAnswers(isDisplay: isClickOnArrowDown));
-    emit(ChangeColor());
+    emit(DisplayAnswers(
+      isDisplay: isClickOnArrowDown,
+      index: displayAnswer,
+    ));
   }
 
   List words = [
-    {"title": tr.student, "imageUrl": IconsResources.hatTeacher},
+    {"title": tr.theStudent, "imageUrl": IconsResources.hatTeacher},
     {"title": tr.degrees, "imageUrl": IconsResources.degree},
   ];
 
-  List<AnswersModel>  answers = [
-      AnswersModel(
-        id: 1,
-        name: "السؤال 1",
-        mark: IconsResources.correct,
-        type: "B",
-      ),
-      AnswersModel(
-        id: 1,
-        name: "السؤال 2",
-        mark: IconsResources.wrong,
-        type: "A",
-      ),
-      AnswersModel(
-        id: 1,
-        name: "السؤال 3",
-        mark: IconsResources.correct,
-        type: "C",
-      ),
-      AnswersModel(
-        id: 1,
-        name: "السؤال 4",
-        mark: IconsResources.correct,
-        type: "B",
-      ),
-      AnswersModel(
-        id: 1,
-        name: "السؤال 5",
-        mark: IconsResources.correct,
-        type: "A",
-      ),
-      AnswersModel(
-        id: 1,
-        name: "السؤال 6",
-        mark: IconsResources.wrong,
-        type: "B",
-      ),
-      AnswersModel(
-        id: 1,
-        name: "السؤال 7",
-        mark: IconsResources.wrong,
-        type: "C",
-      ),
-      AnswersModel(
-        id: 1,
-        name: "السؤال 8",
-        mark: IconsResources.correct,
-        type: "A",
-      ),
-      AnswersModel(
-        id: 1,
-        name: "السؤال 9",
-        mark: IconsResources.correct,
-        type: "B",
-      ),
-      AnswersModel(
-        id: 1,
-        name: "السؤال 10",
-        mark: IconsResources.wrong,
-        type: "C",
-      ),
-      AnswersModel(
-        id: 1,
-        name: "السؤال 11",
-        mark: IconsResources.correct,
-        type: "A",
-      ),
-      AnswersModel(
-        id: 1,
-        name: "السؤال 12",
-        mark: IconsResources.correct,
-        type: "B",
-      ),
-    ];
+  List<AnswersModel> answers = [
+    AnswersModel(
+      id: 1,
+      name: "${tr.question} 1",
+      mark: IconsResources.correct,
+      type: "B",
+    ),
+    AnswersModel(
+      id: 1,
+      name: "${tr.question} 2",
+      mark: IconsResources.wrong,
+      type: "A",
+    ),
+    AnswersModel(
+      id: 1,
+      name: "${tr.question} 3",
+      mark: IconsResources.correct,
+      type: "C",
+    ),
+    AnswersModel(
+      id: 1,
+      name: "${tr.question} 4",
+      mark: IconsResources.correct,
+      type: "B",
+    ),
+    AnswersModel(
+      id: 1,
+      name: "${tr.question} 5",
+      mark: IconsResources.correct,
+      type: "A",
+    ),
+    AnswersModel(
+      id: 1,
+      name: "${tr.question} 6",
+      mark: IconsResources.wrong,
+      type: "B",
+    ),
+    AnswersModel(
+      id: 1,
+      name: "${tr.question} 7",
+      mark: IconsResources.wrong,
+      type: "C",
+    ),
+    AnswersModel(
+      id: 1,
+      name: "${tr.question} 8",
+      mark: IconsResources.correct,
+      type: "A",
+    ),
+    AnswersModel(
+      id: 1,
+      name: "${tr.question} 9",
+      mark: IconsResources.correct,
+      type: "B",
+    ),
+    AnswersModel(
+      id: 1,
+      name: "${tr.question} 10",
+      mark: IconsResources.wrong,
+      type: "C",
+    ),
+    AnswersModel(
+      id: 1,
+      name: "${tr.question} 11",
+      mark: IconsResources.correct,
+      type: "A",
+    ),
+    AnswersModel(
+      id: 1,
+      name: "${tr.question} 12",
+      mark: IconsResources.correct,
+      type: "B",
+    ),
+  ];
 
   List<ExamModel> exams = [
     ExamModel(
-      name: "الاختبار 1",
+      name: "${tr.test} 1",
       answers: [
         AnswersModel(
           id: 1,
-          name: "السؤال 1",
+          name: "${tr.question} 1",
           mark: IconsResources.correct,
           type: "B",
         ),
         AnswersModel(
           id: 1,
-          name: "السؤال 2",
+          name: "${tr.question} 2",
           mark: IconsResources.wrong,
           type: "A",
         ),
         AnswersModel(
           id: 1,
-          name: "السؤال 3",
+          name: "${tr.question} 3",
           mark: IconsResources.correct,
           type: "C",
         ),
         AnswersModel(
           id: 1,
-          name: "السؤال 4",
+          name: "${tr.question} 4",
           mark: IconsResources.correct,
           type: "B",
         ),
         AnswersModel(
           id: 1,
-          name: "السؤال 5",
+          name: "${tr.question} 5",
           mark: IconsResources.correct,
           type: "A",
         ),
         AnswersModel(
           id: 1,
-          name: "السؤال 6",
+          name: "${tr.question} 6",
           mark: IconsResources.wrong,
           type: "B",
         ),
         AnswersModel(
           id: 1,
-          name: "السؤال 7",
-          mark: IconsResources.wrong,
-          type: "C",
-        ),
-        AnswersModel(
-          id: 1,
-          name: "السؤال 8",
-          mark: IconsResources.correct,
-          type: "A",
-        ),
-        AnswersModel(
-          id: 1,
-          name: "السؤال 9",
-          mark: IconsResources.correct,
-          type: "B",
-        ),
-        AnswersModel(
-          id: 1,
-          name: "السؤال 10",
+          name: "${tr.question} 7",
           mark: IconsResources.wrong,
           type: "C",
         ),
         AnswersModel(
           id: 1,
-          name: "السؤال 11",
+          name: "${tr.question} 8",
           mark: IconsResources.correct,
           type: "A",
         ),
         AnswersModel(
           id: 1,
-          name: "السؤال 12",
+          name: "${tr.question} 9",
+          mark: IconsResources.correct,
+          type: "B",
+        ),
+        AnswersModel(
+          id: 1,
+          name: "${tr.question} 10",
+          mark: IconsResources.wrong,
+          type: "C",
+        ),
+        AnswersModel(
+          id: 1,
+          name: "${tr.question} 11",
+          mark: IconsResources.correct,
+          type: "A",
+        ),
+        AnswersModel(
+          id: 1,
+          name: "${tr.question} 12",
           mark: IconsResources.correct,
           type: "B",
         ),
       ],
     ),
-    ExamModel(name: "الاختبار 2", answers: [
+    ExamModel(name: "${tr.test} 2", answers: [
       AnswersModel(
         id: 1,
-        name: "السؤال 1",
+        name: "${tr.question} 1",
         mark: IconsResources.correct,
         type: "B",
       ),
       AnswersModel(
         id: 1,
-        name: "السؤال 2",
+        name: "${tr.question} 2",
         mark: IconsResources.wrong,
         type: "A",
       ),
       AnswersModel(
         id: 1,
-        name: "السؤال 3",
+        name: "${tr.question} 3",
         mark: IconsResources.correct,
         type: "C",
       ),
       AnswersModel(
         id: 1,
-        name: "السؤال 4",
+        name: "${tr.question} 4",
         mark: IconsResources.correct,
         type: "B",
       ),
       AnswersModel(
         id: 1,
-        name: "السؤال 5",
+        name: "${tr.question} 5",
         mark: IconsResources.correct,
         type: "A",
       ),
       AnswersModel(
         id: 1,
-        name: "السؤال 6",
+        name: "${tr.question} 6",
         mark: IconsResources.wrong,
         type: "B",
       ),
       AnswersModel(
         id: 1,
-        name: "السؤال 7",
-        mark: IconsResources.wrong,
-        type: "C",
-      ),
-      AnswersModel(
-        id: 1,
-        name: "السؤال 8",
-        mark: IconsResources.correct,
-        type: "A",
-      ),
-      AnswersModel(
-        id: 1,
-        name: "السؤال 9",
-        mark: IconsResources.correct,
-        type: "B",
-      ),
-      AnswersModel(
-        id: 1,
-        name: "السؤال 10",
+        name: "${tr.question} 7",
         mark: IconsResources.wrong,
         type: "C",
       ),
       AnswersModel(
         id: 1,
-        name: "السؤال 11",
+        name: "${tr.question} 8",
         mark: IconsResources.correct,
         type: "A",
       ),
       AnswersModel(
         id: 1,
-        name: "السؤال 12",
+        name: "${tr.question} 9",
+        mark: IconsResources.correct,
+        type: "B",
+      ),
+      AnswersModel(
+        id: 1,
+        name: "${tr.question} 10",
+        mark: IconsResources.wrong,
+        type: "C",
+      ),
+      AnswersModel(
+        id: 1,
+        name: "${tr.question} 11",
+        mark: IconsResources.correct,
+        type: "A",
+      ),
+      AnswersModel(
+        id: 1,
+        name: "${tr.question} 12",
         mark: IconsResources.correct,
         type: "B",
       ),
     ]),
     ExamModel(
-      name: "الاختبار 3",
+      name: "${tr.test} 3",
       answers: [
         AnswersModel(
           id: 1,
-          name: "السؤال 1",
+          name: "${tr.question} 1",
           mark: IconsResources.correct,
           type: "B",
         ),
         AnswersModel(
           id: 1,
-          name: "السؤال 2",
+          name: "${tr.question} 2",
           mark: IconsResources.wrong,
           type: "A",
         ),
         AnswersModel(
           id: 1,
-          name: "السؤال 3",
+          name: "${tr.question} 3",
           mark: IconsResources.correct,
           type: "C",
         ),
         AnswersModel(
           id: 1,
-          name: "السؤال 4",
+          name: "${tr.question} 4",
           mark: IconsResources.correct,
           type: "B",
         ),
         AnswersModel(
           id: 1,
-          name: "السؤال 5",
+          name: "${tr.question} 5",
           mark: IconsResources.correct,
           type: "A",
         ),
         AnswersModel(
           id: 1,
-          name: "السؤال 6",
+          name: "${tr.question} 6",
           mark: IconsResources.wrong,
           type: "B",
         ),
         AnswersModel(
           id: 1,
-          name: "السؤال 7",
-          mark: IconsResources.wrong,
-          type: "C",
-        ),
-        AnswersModel(
-          id: 1,
-          name: "السؤال 8",
-          mark: IconsResources.correct,
-          type: "A",
-        ),
-        AnswersModel(
-          id: 1,
-          name: "السؤال 9",
-          mark: IconsResources.correct,
-          type: "B",
-        ),
-        AnswersModel(
-          id: 1,
-          name: "السؤال 10",
+          name: "${tr.question} 7",
           mark: IconsResources.wrong,
           type: "C",
         ),
         AnswersModel(
           id: 1,
-          name: "السؤال 11",
+          name: "${tr.question} 8",
           mark: IconsResources.correct,
           type: "A",
         ),
         AnswersModel(
           id: 1,
-          name: "السؤال 12",
+          name: "${tr.question} 9",
+          mark: IconsResources.correct,
+          type: "B",
+        ),
+        AnswersModel(
+          id: 1,
+          name: "${tr.question} 10",
+          mark: IconsResources.wrong,
+          type: "C",
+        ),
+        AnswersModel(
+          id: 1,
+          name: "${tr.question} 11",
+          mark: IconsResources.correct,
+          type: "A",
+        ),
+        AnswersModel(
+          id: 1,
+          name: "${tr.question} 12",
           mark: IconsResources.correct,
           type: "B",
         ),
       ],
     ),
   ];
-
-  
 
   List<StudentModel> students = [
     StudentModel(

@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:dropdown_textfield/dropdown_textfield.dart';
 
 import 'package:flutter/material.dart';
@@ -18,18 +20,20 @@ List<String> models = [
 class CustomDropDownTextField extends StatelessWidget {
   final dynamic controller;
   final dynamic initialValue;
-  final String hintText;
+  final String? hintText;
   final void Function(dynamic)? onChanged;
   final void Function()? onTap;
   final List<String>? items;
+  final bool isAddCourse;
   const CustomDropDownTextField({
     super.key,
     this.controller,
     this.initialValue,
     this.onChanged,
-    required this.hintText,
+    this.hintText,
     this.onTap,
     this.items,
+    this.isAddCourse = false,
   });
 
   @override
@@ -38,15 +42,11 @@ class CustomDropDownTextField extends StatelessWidget {
       onTap: onTap,
       child: Container(
         alignment: Alignment.center,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(16.r),
-          border: Border.all(
-            color: ColorResources.blackColor.withOpacity(0.10),
-            width: 1.w,
-          ),
-        ),
+        decoration: BoxDecoration(),
         height: 56.h,
         child: DropDownTextField(
+          clearOption: false,
+          dropDownIconProperty: IconProperty(color: Colors.transparent),
           padding: EdgeInsets.symmetric(horizontal: 16.w),
           textStyle: AppTextStyle.textStyle(
             appFontSize: 16.sp,
@@ -58,23 +58,27 @@ class CustomDropDownTextField extends StatelessWidget {
           ),
           initialValue: initialValue,
           controller: controller,
-          //clearOption: true,
-          //enableSearch: true,
-          //isEnabled: true,
           clearIconProperty: IconProperty(color: Colors.green),
           searchTextStyle: const TextStyle(color: Colors.red),
-
           textFieldDecoration: InputDecoration(
             fillColor: ColorResources.whiteColor,
             filled: true,
-            hintStyle: AppTextStyle.textStyle(
-              appFontSize: 16.sp,
-              appFontHeight: 19.36.sp,
-              appFontWeight: FontWeight.w400,
-              color: ColorResources.blackColor.withOpacity(
-                0.25,
-              ),
-            ),
+            hintStyle: isAddCourse
+                ? AppTextStyle.textStyle(
+                    isPlusJakartaSans: true,
+                    appFontSize: 10.sp,
+                    appFontHeight: 12.6.sp,
+                    appFontWeight: FontWeight.w500,
+                    color: ColorResources.blackColor,
+                  )
+                : AppTextStyle.textStyle(
+                    appFontSize: 16.sp,
+                    appFontHeight: 19.36.sp,
+                    appFontWeight: FontWeight.w400,
+                    color: ColorResources.blackColor.withOpacity(
+                      0.25,
+                    ),
+                  ),
             suffixIcon: SizedBox(),
             prefixIcon: Image.asset(
               ImageResources.arrowDown,
@@ -82,18 +86,35 @@ class CustomDropDownTextField extends StatelessWidget {
               width: 16.w,
             ),
             hintText: hintText,
-            border: InputBorder.none,
-            // OutlineInputBorder(
-            //   borderRadius: BorderRadius.circular(16.r),
-            //   borderSide: BorderSide(
-            //     color: ColorResources.blackColor.withOpacity(0.10),
-            //     width: 1.w,
-            //   ),
-            // ),
+            border: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(16.r),
+              borderSide: BorderSide(
+                color: ColorResources.blackColor.withOpacity(0.10),
+                width: 1.w,
+              ),
+            ),
+            errorBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(16.r),
+              borderSide: BorderSide(
+                color: ColorResources.blackColor.withOpacity(0.10),
+                width: 1.w,
+              ),
+            ),
+            enabledBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(16.r),
+              borderSide: BorderSide(
+                color: ColorResources.blackColor.withOpacity(0.10),
+                width: 1.w,
+              ),
+            ),
+            focusedBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(16.r),
+              borderSide: BorderSide(
+                color: ColorResources.blackColor.withOpacity(0.10),
+                width: 1.w,
+              ),
+            ),
           ),
-          // searchDecoration: InputDecoration(
-          //   hintText: "enter your custom hint text here",
-          // ),
           validator: (value) {
             if (value!.isEmpty) {
               return "Required field";
@@ -105,9 +126,9 @@ class CustomDropDownTextField extends StatelessWidget {
           dropDownList: [
             ...List.generate(items!.length, (index) {
               return DropDownValueModel(
-                  // ignore: unnecessary_string_interpolations
-                  name: '${items![index]}',
-                  value: "$index");
+                name: items![index],
+                value: "$index",
+              );
             })
           ],
           onChanged: onChanged,

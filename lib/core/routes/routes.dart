@@ -8,7 +8,9 @@ class Routes {
   static const initialPage = "initialPage";
   static const onBoard = "onBoard";
   static const dashBoard = "dashboard";
-  static const books = "books";
+  static const courses = "courses";
   static const students = "students";
   static const detailsForStudent = "detailsForStudent";
+  static const statisticsScreen = "statisticsScreen";
+  static const contentCourseScreen = "contentCourseScreen";
 }

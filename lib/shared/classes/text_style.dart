@@ -5,23 +5,22 @@ import 'package:teacher/shared/extentions/app_dimensions_extension.dart';
 import '../../core/constant/appStrings.dart';
 
 class AppTextStyle {
-  static TextStyle textStyle({
-    required double appFontSize,
-    double? appFontHeight,
-    Color? color,
-    bool? sf,
-    bool? gilroy,
-    FontWeight appFontWeight = FontWeight.w400,
-    TextDecoration? decoration
-  }) {
+  static TextStyle textStyle(
+      {required double appFontSize,
+      double? appFontHeight,
+      Color? color,
+      bool? sf,
+      bool? isPlusJakartaSans,
+      FontWeight appFontWeight = FontWeight.w400,
+      TextDecoration? decoration}) {
     return TextStyle(
       fontSize: appFontSize.width,
       fontWeight: appFontWeight,
       color: color,
       decoration: decoration,
-      fontFamily:AppStrings.inter,
-      // gilroy == true ? AppStrings.gilroy
-      //     : AppStrings.inter,
+      fontFamily: isPlusJakartaSans == true
+          ? AppStrings.plusJakartaSans
+          : AppStrings.inter,
       height: appFontHeight != null
           ? appFontHeight / appFontSize
           : appFontSize / appFontSize,
@@ -30,8 +29,8 @@ class AppTextStyle {
   }
 
   static double? _getLetterSpacing(
-      double appFontSize,
-      ) {
+    double appFontSize,
+  ) {
     switch (appFontSize) {
       case <= 13:
         return 0.005;

@@ -27,7 +27,7 @@ class DashboardCubit extends Cubit<DashboardState> {
   List<ScreenModel> widgets = [
     ScreenModel(id: 1, name: tr.home, icon: IconsResources.home),
     ScreenModel(id: 1, name: tr.statistics, icon: IconsResources.chart),
-    ScreenModel(id: 1, name: tr.books, icon: IconsResources.book),
+    ScreenModel(id: 1, name: tr.courses, icon: IconsResources.book),
     ScreenModel(id: 1, name: tr.students, icon: IconsResources.hatTeacher),
     ScreenModel(id: 1, name: tr.cart, icon: IconsResources.cart2),
     ScreenModel(id: 1, name: tr.profile, icon: IconsResources.profileIcon),

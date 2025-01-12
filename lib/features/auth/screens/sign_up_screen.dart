@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:teacher/core/classes/responsive_screen.dart';
+import 'package:teacher/core/functions/check_for_current_language.dart';
 import 'package:teacher/core/functions/translate.dart';
 import 'package:teacher/core/routes/routes.dart';
 import 'package:teacher/features/auth/cubit/auth_cubit.dart';
@@ -23,7 +24,7 @@ class SignUpScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    ResponsiveScreen.initialize(context);
+    ResponsiveScreen.initialize();
     return BlocConsumer<AuthCubit, AuthState>(
       listener: (context, state) {},
       builder: (context, state) {
@@ -41,7 +42,7 @@ class SignUpScreen extends StatelessWidget {
             child: SingleChildScrollView(
               child: Column(
                 children: [
-                  CustomTitleLogin(title:tr.theLogin),
+                  CustomTitleLogin(title: tr.theLogin),
                   SizedBox(height: 40.h),
                   CustomTextField(
                     hintText: tr.enterName,
@@ -49,16 +50,15 @@ class SignUpScreen extends StatelessWidget {
                   ),
                   SizedBox(height: 16.h),
                   CustomTextField(
-                    hintText:tr.email,
+                    hintText: tr.email,
                     obscureText: true,
                   ),
                   SizedBox(height: 16.h),
                   PhoneNumberInput(hintText: tr.enterPhoneNumber),
-                  //CustomTextField(hintText: S.of(context).enterPhoneNumber),
                   SizedBox(height: 16.h),
                   CustomDropDownTextField(
                     hintText: tr.enterDateOfBirth,
-                    items: [tr.male,tr.female],
+                    items: [tr.male, tr.female],
                   ),
                   SizedBox(height: 16.h),
                   CustomDropDownTextField(
@@ -79,7 +79,7 @@ class SignUpScreen extends StatelessWidget {
                   SizedBox(height: 16.h),
                   CustomTextField(
                     obscureText: AuthCubit.instance.isShowConfirmPassword,
-                    hintText:tr.confirmPassword,
+                    hintText: tr.confirmPassword,
                     suffixIcon: AuthCubit.instance.isShowConfirmPassword
                         ? Icons.visibility
                         : Icons.visibility_off,
@@ -89,7 +89,7 @@ class SignUpScreen extends StatelessWidget {
                   ),
                   SizedBox(height: 40.h),
                   CustomButton(
-                    title:tr.login,
+                    title: tr.login,
                     isLogin: true,
                   ),
                   SizedBox(height: 24.h),
@@ -124,7 +124,9 @@ class SignUpScreen extends StatelessWidget {
                       TextSpan(
                         children: [
                           TextSpan(
-                            text: " ${tr.iAlreadyHaveAnAccount}؟  ",
+                            text: isArabic
+                                ? "${tr.iAlreadyHaveAnAccount}؟  "
+                                : "${tr.iAlreadyHaveAnAccount}? ",
                             style: AppTextStyle.textStyle(
                               appFontSize: 16.sp,
                               appFontHeight: 19.36.sp,

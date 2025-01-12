@@ -15,6 +15,7 @@ class DisplayCourses extends StatelessWidget {
     return Container(
       height: 97.h,
       width: 342.w,
+      //alignment: Alignment.center,
       padding: EdgeInsets.only(top: 8.h, right: 8.w, bottom: 8.h, left: 16.w),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(25.r),
@@ -50,8 +51,8 @@ class DisplayCourses extends StatelessWidget {
                           color: ColorResources.primaryColor),
                     ),
                     Container(
-                      height: 28.h,
-                      width: 73.w,
+                      //height: 28.h,
+                      //width: 73.w,
                       alignment: Alignment.center,
                       padding:
                           EdgeInsets.symmetric(horizontal: 8.w, vertical: 4.h),

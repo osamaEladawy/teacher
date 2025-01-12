@@ -2,15 +2,17 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:teacher/core/routes/routes.dart';
+import 'package:teacher/features/add_course/screens/content_course_screen.dart';
 import 'package:teacher/features/auth/screens/initial_page.dart';
 import 'package:teacher/features/auth/screens/login_or_signup.dart';
 import 'package:teacher/features/auth/screens/login_screen.dart';
 import 'package:teacher/features/auth/screens/sign_up_screen.dart';
-import 'package:teacher/features/books/screens/books_screen.dart';
+import 'package:teacher/features/Courses/screens/Courses_screen.dart';
 import 'package:teacher/features/dashboaed/screens/dashboard_screen.dart';
 import 'package:teacher/features/home/screens/home_screen.dart';
 import 'package:teacher/features/onboard/screens/onboard_screen.dart';
 import 'package:teacher/features/splash/screen/splash_screen.dart';
+import 'package:teacher/features/statistics/screens/statistics_screen.dart';
 import 'package:teacher/features/students/models/student_model.dart';
 import 'package:teacher/features/students/screens/details_students_screen.dart';
 import 'package:teacher/features/students/screens/students_screen.dart';
@@ -38,8 +40,8 @@ class RoutesGenerator {
         return _buildRoute(const InitialPage(), isIos);
       case Routes.dashBoard:
         return _buildRoute(const DashboardScreen(), isIos);
-      case Routes.books:
-        return _buildRoute(const BooksScreen(), isIos);
+      case Routes.courses:
+        return _buildRoute(const CoursesScreen(), isIos);
       case Routes.students:
         return _buildRoute(const StudentsScreen(), isIos);
       case Routes.detailsForStudent:
@@ -48,10 +50,10 @@ class RoutesGenerator {
         } else {
           return _buildRoute(const UndefinedWidget(), isIos);
         }
-      // case Routes.profile:
-      //   return _buildRoute(const ProfileScreen(), isIos);
-      // case Routes.quickWithdrawScreen:
-      //   return _buildRoute(const QuickWithdrawScreen(), isIos);
+      case Routes.statisticsScreen:
+        return _buildRoute(const StatisticsScreen(), isIos);
+      case Routes.contentCourseScreen:
+        return _buildRoute(const ContentCourseScreen(), isIos);
       // case Routes.editProfile:
       //   return _buildRoute(const EditProfileScreen(), isIos);
       // case Routes.settings:

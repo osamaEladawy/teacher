@@ -579,6 +579,436 @@ class S {
       args: [],
     );
   }
+
+  /// `About the teacher`
+  String get aboutTheTeacher {
+    return Intl.message(
+      'About the teacher',
+      name: 'aboutTheTeacher',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The Student`
+  String get theStudent {
+    return Intl.message(
+      'The Student',
+      name: 'theStudent',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sunday`
+  String get sunday {
+    return Intl.message(
+      'Sunday',
+      name: 'sunday',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Thursday`
+  String get thursday {
+    return Intl.message(
+      'Thursday',
+      name: 'thursday',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Evaluations`
+  String get evaluations {
+    return Intl.message(
+      'Evaluations',
+      name: 'evaluations',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `A math teacher with more than ten years of experience and has taught more than 5000 students over ten years. He has more than five years of experience in teaching abilities.`
+  String get aMathTeacherWithMoreThanTenYearsOfExperience {
+    return Intl.message(
+      'A math teacher with more than ten years of experience and has taught more than 5000 students over ten years. He has more than five years of experience in teaching abilities.',
+      name: 'aMathTeacherWithMoreThanTenYearsOfExperience',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Description`
+  String get description {
+    return Intl.message(
+      'Description',
+      name: 'description',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The Lectures`
+  String get theLectures {
+    return Intl.message(
+      'The Lectures',
+      name: 'theLectures',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Remaining Course`
+  String get remainingCourse {
+    return Intl.message(
+      'Remaining Course',
+      name: 'remainingCourse',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Subscribers`
+  String get subscribers {
+    return Intl.message(
+      'Subscribers',
+      name: 'subscribers',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Phone Users`
+  String get phoneUsers {
+    return Intl.message(
+      'Phone Users',
+      name: 'phoneUsers',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Computer Users`
+  String get computerUsers {
+    return Intl.message(
+      'Computer Users',
+      name: 'computerUsers',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Completed`
+  String get completed {
+    return Intl.message(
+      'Completed',
+      name: 'completed',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Remaining`
+  String get remaining {
+    return Intl.message(
+      'Remaining',
+      name: 'remaining',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `From`
+  String get from {
+    return Intl.message(
+      'From',
+      name: 'from',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `To`
+  String get to {
+    return Intl.message(
+      'To',
+      name: 'to',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Weeks`
+  String get weeks {
+    return Intl.message(
+      'Weeks',
+      name: 'weeks',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Week`
+  String get week {
+    return Intl.message(
+      'Week',
+      name: 'week',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Of The Weeks`
+  String get ofTheWeeks {
+    return Intl.message(
+      'Of The Weeks',
+      name: 'ofTheWeeks',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `number Of Courses Sold`
+  String get numberOfCoursesSold {
+    return Intl.message(
+      'number Of Courses Sold',
+      name: 'numberOfCoursesSold',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Number Of Students Enrolled`
+  String get numberOfStudentsEnrolled {
+    return Intl.message(
+      'Number Of Students Enrolled',
+      name: 'numberOfStudentsEnrolled',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Percentage Of Courses Completed`
+  String get percentageOfCoursesCompleted {
+    return Intl.message(
+      'Percentage Of Courses Completed',
+      name: 'percentageOfCoursesCompleted',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Percentage Of Profits`
+  String get percentageOfProfits {
+    return Intl.message(
+      'Percentage Of Profits',
+      name: 'percentageOfProfits',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sales`
+  String get sales {
+    return Intl.message(
+      'Sales',
+      name: 'sales',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Total Sales`
+  String get totalSales {
+    return Intl.message(
+      'Total Sales',
+      name: 'totalSales',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Total Profit`
+  String get totalProfit {
+    return Intl.message(
+      'Total Profit',
+      name: 'totalProfit',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Question`
+  String get question {
+    return Intl.message(
+      'Question',
+      name: 'question',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter course content`
+  String get enterCourseContent {
+    return Intl.message(
+      'Enter course content',
+      name: 'enterCourseContent',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Educational Material`
+  String get educationalMaterial {
+    return Intl.message(
+      'Educational Material',
+      name: 'educationalMaterial',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter the name of the educational material`
+  String get enterTheNameOfTheEducationalMaterial {
+    return Intl.message(
+      'Enter the name of the educational material',
+      name: 'enterTheNameOfTheEducationalMaterial',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Number Of Days`
+  String get numberOfDays {
+    return Intl.message(
+      'Number Of Days',
+      name: 'numberOfDays',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Number Of Tests`
+  String get numberOfTests {
+    return Intl.message(
+      'Number Of Tests',
+      name: 'numberOfTests',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Number Of Lectures`
+  String get numberOfLectures {
+    return Intl.message(
+      'Number Of Lectures',
+      name: 'numberOfLectures',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter today`
+  String get enterToday {
+    return Intl.message(
+      'Enter today',
+      name: 'enterToday',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The Previous`
+  String get thePrevious {
+    return Intl.message(
+      'The Previous',
+      name: 'thePrevious',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The Appointment`
+  String get theAppointment {
+    return Intl.message(
+      'The Appointment',
+      name: 'theAppointment',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Time`
+  String get time {
+    return Intl.message(
+      'Time',
+      name: 'time',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Test Duration`
+  String get testDuration {
+    return Intl.message(
+      'Test Duration',
+      name: 'testDuration',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Number Of Questions`
+  String get numberOfQuestions {
+    return Intl.message(
+      'Number Of Questions',
+      name: 'numberOfQuestions',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter Question`
+  String get enterQuestion {
+    return Intl.message(
+      'Enter Question',
+      name: 'enterQuestion',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Write question here`
+  String get writeQuestionHere {
+    return Intl.message(
+      'Write question here',
+      name: 'writeQuestionHere',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Go to the next test`
+  String get goToTheNextTest {
+    return Intl.message(
+      'Go to the next test',
+      name: 'goToTheNextTest',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Complete`
+  String get complete {
+    return Intl.message(
+      'Complete',
+      name: 'complete',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

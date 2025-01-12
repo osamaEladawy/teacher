@@ -4,19 +4,21 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:teacher/app_injections.dart';
 import 'package:teacher/core/routes/routes_generator.dart';
+import 'package:teacher/features/add_course/cubit/add_course_cubit.dart';
 import 'package:teacher/features/auth/cubit/auth_cubit.dart';
-import 'package:teacher/features/books/cubit/books_cubit.dart';
+import 'package:teacher/features/courses/cubit/books_cubit.dart';
 import 'package:teacher/features/dashboaed/cubit/dashboard_cubit.dart';
-import 'package:teacher/features/dashboaed/screens/dashboard_screen.dart';
 import 'package:teacher/features/home/cubit/home_cubit.dart';
 import 'package:teacher/features/onboard/cubit/onboard_cubit.dart';
+import 'package:teacher/features/profile/cubit/profile_cubit.dart';
 import 'package:teacher/features/splash/cubit/theme_cubit.dart';
 import 'package:teacher/features/splash/screen/splash_screen.dart';
+import 'package:teacher/features/statistics/cubit/statistics_cubit.dart';
 import 'package:teacher/features/students/cubit/students_cubit.dart';
 import 'package:teacher/generated/l10n.dart';
 
 //! when you want using localization in this app
-//* please install the flutter intl (extention) from plugins in android studio
+//* please install the flutter intl (extention) from plugins in android studio or visual studio
 
 final navigatorKey = GlobalKey<NavigatorState>();
 
@@ -39,9 +41,16 @@ class MyApp extends StatelessWidget {
             BlocProvider<HomeCubit>(create: (context) => getIt<HomeCubit>()),
             BlocProvider<DashboardCubit>(
                 create: (context) => getIt<DashboardCubit>()),
-            BlocProvider<BooksCubit>(create: (context) => getIt<BooksCubit>()),
+            BlocProvider<CoursesCubit>(
+                create: (context) => getIt<CoursesCubit>()),
             BlocProvider<StudentsCubit>(
                 create: (context) => getIt<StudentsCubit>()),
+            BlocProvider<ProfileCubit>(
+                create: (context) => getIt<ProfileCubit>()),
+            BlocProvider<StatisticsCubit>(
+                create: (context) => getIt<StatisticsCubit>()),
+            BlocProvider<AddCourseCubit>(
+                create: (context) => getIt<AddCourseCubit>()),
           ],
           child: MaterialApp(
             navigatorKey: navigatorKey,
@@ -59,7 +68,7 @@ class MyApp extends StatelessWidget {
           ),
         );
       },
-      child: DashboardScreen(),
+      child: SplashScreen(),
     );
   }
 }

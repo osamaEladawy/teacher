@@ -5,8 +5,13 @@ import 'package:teacher/shared/resources/color_resources.dart';
 import '../classes/text_style.dart';
 
 class TitleAppBar extends StatelessWidget {
-  const TitleAppBar({super.key, required this.title});
+  const TitleAppBar({
+    super.key,
+    required this.title,
+    this.isProfile = false,
+  });
   final String title;
+  final bool isProfile;
 
   @override
   Widget build(BuildContext context) {
@@ -15,6 +20,7 @@ class TitleAppBar extends StatelessWidget {
       style: AppTextStyle.textStyle(
         appFontSize: 20.sp,
         color: ColorResources.primaryColor,
+        // isProfile ? ColorResources.whiteColor : ColorResources.primaryColor,
         appFontWeight: FontWeight.w600,
         appFontHeight: 24.2.sp,
       ),

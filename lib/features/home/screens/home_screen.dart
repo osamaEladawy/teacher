@@ -1,26 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:teacher/core/classes/responsive_screen.dart';
 import 'package:teacher/core/functions/check_for_current_language.dart';
 import 'package:teacher/core/functions/translate.dart';
+import 'package:teacher/features/add_course/screens/add_course_screen.dart';
 import 'package:teacher/features/home/cubit/home_cubit.dart';
 import 'package:teacher/shared/classes/text_style.dart';
 import 'package:teacher/shared/resources/color_resources.dart';
-import 'package:teacher/shared/resources/icons_resources.dart';
-import 'package:teacher/shared/resources/image_resources.dart';
 import 'package:teacher/shared/widgets/display_courses.dart';
 
 import '../widgets/Custom_card_home.dart';
-import '../../dashboaed/widgets/custom_drawer.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    ResponsiveScreen.initialize(context);
+    ResponsiveScreen.initialize();
     return BlocBuilder<HomeCubit, HomeState>(
       builder: (context, state) {
         return Scaffold(
@@ -91,10 +88,16 @@ class HomeScreen extends StatelessWidget {
           ),
           floatingActionButtonLocation: FloatingActionButtonLocation.startFloat,
           floatingActionButton: GestureDetector(
-            onTap: () {},
+            onTap: () {
+              showDialog(
+                  context: context,
+                  builder: (context) {
+                    return AddCourseScreen();
+                  });
+            },
             child: Container(
               height: 65.h,
-              width: 176.w,
+              width: 200.w,
               alignment: Alignment.center,
               padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 16.h),
               decoration: BoxDecoration(
@@ -102,10 +105,10 @@ class HomeScreen extends StatelessWidget {
                 color: ColorResources.greenColor,
                 boxShadow: [
                   BoxShadow(
-                    color: ColorResources.blackColor.withOpacity(0.40),
-                    blurRadius: 7.0,
-                    //spreadRadius: 1.0,
-                    offset: Offset(0.0, 0),
+                    color: ColorResources.blackColor.withOpacity(0.3),
+                    blurRadius: 3.0,
+                    spreadRadius: 2.0,
+                    offset: Offset(1, 3),
                   ),
                 ],
               ),

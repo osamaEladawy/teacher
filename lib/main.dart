@@ -8,7 +8,6 @@ import 'package:teacher/shared/cubits/bloc_observer.dart';
 
 void main(List<String> args) async {
   WidgetsFlutterBinding.ensureInitialized();
-  //await EasyLocalization.ensureInitialized();
   await PrefServices.init();
   Bloc.observer = MyBlocObserver();
   await appInjections();

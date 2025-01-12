@@ -8,7 +8,8 @@ class CustomCardHome extends StatelessWidget {
     super.key,
     required this.title,
     required this.colorContainer,
-    required this.colorText, this.onTap,
+    required this.colorText,
+    this.onTap,
   });
 
   final String title;
@@ -22,8 +23,8 @@ class CustomCardHome extends StatelessWidget {
       onTap: onTap,
       child: Container(
         alignment: Alignment.center,
-        height: 35.h,
-        width: 117.w,
+        //height: 35.h,
+        //width: 117.w,
         padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15.r),

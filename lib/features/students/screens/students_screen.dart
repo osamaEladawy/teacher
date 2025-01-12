@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:teacher/core/functions/check_for_current_language.dart';
 import 'package:teacher/core/functions/translate.dart';
 import 'package:teacher/core/routes/routes.dart';
 import 'package:teacher/features/students/cubit/students_cubit.dart';
@@ -10,6 +11,7 @@ import 'package:teacher/shared/classes/text_style.dart';
 import 'package:teacher/shared/extentions/navigations.dart';
 import 'package:teacher/shared/resources/color_resources.dart';
 import 'package:teacher/shared/resources/icons_resources.dart';
+import 'package:teacher/shared/resources/image_resources.dart';
 
 class StudentsScreen extends StatelessWidget {
   const StudentsScreen({super.key});
@@ -78,7 +80,7 @@ class StudentsScreen extends StatelessWidget {
                               ),
                               Container(
                                 //height: 28.h,
-                                width: 84.w,
+                                //width: 84.w,
                                 alignment: Alignment.center,
                                 padding: EdgeInsets.symmetric(
                                     horizontal: 8.w, vertical: 4.h),
@@ -102,7 +104,12 @@ class StudentsScreen extends StatelessWidget {
                             ],
                           ),
                           Spacer(),
-                          SvgPicture.asset(IconsResources.arrowLeft),
+                          isArabic
+                              ? SvgPicture.asset(IconsResources.arrowLeft)
+                              : SvgPicture.asset(
+                                  IconsResources.arrowRight,
+                                  color: ColorResources.primaryColor,
+                                ),
                         ],
                       ),
                     ),

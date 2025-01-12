@@ -30,20 +30,16 @@ class OnboardCubit extends Cubit<OnboardState> {
     emit(ChangeIndex(index: selectType));
   }
 
-  void goToHome() {
-    // if (currentIndex == onBoarding.length - 1) {
-    //   // PrefServices.sharedPreferences!.setBool("isOnboarding", true);
-    //   Navigator.pushReplacementNamed(
-    //       navigatorKey.currentContext!, Routes.initialPage);
-    //   emit(ChangeIndex(index: currentIndex));
-    //   return;
-    // }
+  void nextPage() {
     currentIndex++;
-    emit(ChangeIndex(index: currentIndex));
-    controller.nextPage(
-      duration: Duration(milliseconds: 200),
-      curve: Curves.bounceIn,
-    );
+    if (currentIndex > onBoarding.length - 1) {
+    } else {
+      controller.animateToPage(
+        currentIndex,
+        duration: const Duration(milliseconds: 3000),
+        curve: Curves.easeOutBack,
+      );
+    }
   }
 
   List words = [
@@ -56,14 +52,6 @@ class OnboardCubit extends Cubit<OnboardState> {
       "imageUrl": IconsResources.teacher
     },
   ];
-
-  // String get displayTitle {
-  //   if (currentIndex == onBoarding.length - 1) {
-  //     return LocaleKeys.start.tr();
-  //   } else {
-  //     return LocaleKeys.skip.tr();
-  //   }
-  // }
 
   List<OnboardModel> onBoarding = [
     OnboardModel(

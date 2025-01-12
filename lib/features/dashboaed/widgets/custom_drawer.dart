@@ -15,7 +15,7 @@ class CustomDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    ResponsiveScreen.initialize(context);
+    ResponsiveScreen.initialize();
     return Drawer(
       width: 276.w,
       shape: OutlineInputBorder(
