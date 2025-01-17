@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:meta/meta.dart';
 import 'package:teacher/core/functions/translate.dart';
-import 'package:teacher/features/dashboaed/models/screen_model.dart';
+import 'package:teacher/features/dashboard/models/screen_model.dart';
 import 'package:teacher/my_app.dart';
 import 'package:teacher/shared/resources/icons_resources.dart';
 

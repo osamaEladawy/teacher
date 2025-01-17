@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:teacher/core/classes/responsive_screen.dart';
-import 'package:teacher/core/functions/check_for_current_language.dart';
 import 'package:teacher/features/profile/cubit/profile_cubit.dart';
 import 'package:teacher/features/profile/widgets/display_about_teacher.dart';
 import 'package:teacher/features/profile/widgets/display_courses_profile.dart';

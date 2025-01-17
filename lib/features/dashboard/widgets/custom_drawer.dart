@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:teacher/features/dashboaed/cubit/dashboard_cubit.dart';
+import 'package:teacher/features/dashboard/cubit/dashboard_cubit.dart';
 
 import '../../../core/classes/responsive_screen.dart';
 import '../../../shared/resources/color_resources.dart';

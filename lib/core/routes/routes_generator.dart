@@ -8,7 +8,7 @@ import 'package:teacher/features/auth/screens/login_or_signup.dart';
 import 'package:teacher/features/auth/screens/login_screen.dart';
 import 'package:teacher/features/auth/screens/sign_up_screen.dart';
 import 'package:teacher/features/Courses/screens/Courses_screen.dart';
-import 'package:teacher/features/dashboaed/screens/dashboard_screen.dart';
+import 'package:teacher/features/dashboard/screens/dashboard_screen.dart';
 import 'package:teacher/features/home/screens/home_screen.dart';
 import 'package:teacher/features/onboard/screens/onboard_screen.dart';
 import 'package:teacher/features/splash/screen/splash_screen.dart';

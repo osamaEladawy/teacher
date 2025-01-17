@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:teacher/core/functions/translate.dart';
 import 'package:teacher/features/courses/cubit/books_cubit.dart';
 import 'package:teacher/shared/widgets/display_courses.dart';
-import 'package:teacher/shared/widgets/titleAppBar.dart';
 
 class CoursesScreen extends StatelessWidget {
   const CoursesScreen({super.key});

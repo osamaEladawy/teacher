@@ -11,7 +11,6 @@ import 'package:teacher/shared/classes/text_style.dart';
 import 'package:teacher/shared/extentions/navigations.dart';
 import 'package:teacher/shared/resources/color_resources.dart';
 import 'package:teacher/shared/resources/icons_resources.dart';
-import 'package:teacher/shared/resources/image_resources.dart';
 
 class StudentsScreen extends StatelessWidget {
   const StudentsScreen({super.key});

@@ -7,7 +7,7 @@ import 'package:teacher/core/routes/routes_generator.dart';
 import 'package:teacher/features/add_course/cubit/add_course_cubit.dart';
 import 'package:teacher/features/auth/cubit/auth_cubit.dart';
 import 'package:teacher/features/courses/cubit/books_cubit.dart';
-import 'package:teacher/features/dashboaed/cubit/dashboard_cubit.dart';
+import 'package:teacher/features/dashboard/cubit/dashboard_cubit.dart';
 import 'package:teacher/features/home/cubit/home_cubit.dart';
 import 'package:teacher/features/onboard/cubit/onboard_cubit.dart';
 import 'package:teacher/features/profile/cubit/profile_cubit.dart';
